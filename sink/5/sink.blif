@@ -1,0 +1,7 @@
+# Benchmark "sink" written by ABC on Sun Jul 13 20:28:14 2025
+.model sink
+.inputs clk rst ins[0] ins[1] ins[2] ins[3] ins[4] ins_valid
+.outputs ins_ready
+.names ins_ready
+ 1
+.end

@@ -1,0 +1,86 @@
+# Benchmark "mux_dataless" written by ABC on Sun Jul 13 20:28:20 2025
+.model mux_dataless
+.inputs clk rst ins_valid[0] ins_valid[1] ins_valid[2] ins_valid[3] \
+ ins_valid[4] ins_valid[5] ins_valid[6] ins_valid[7] ins_valid[8] index \
+ index_valid outs_ready
+.outputs ins_ready[0] ins_ready[1] ins_ready[2] ins_ready[3] ins_ready[4] \
+ ins_ready[5] ins_ready[6] ins_ready[7] ins_ready[8] index_ready outs_valid
+.names index index_valid new_n26
+01 1
+.names ins_valid[0] new_n26 new_n27
+11 1
+.names outs_ready new_n27 new_n28
+11 1
+.names ins_valid[0] new_n28 ins_ready[0]
+10 0
+.names index index_valid new_n30
+11 1
+.names ins_valid[1] new_n30 new_n31
+11 1
+.names outs_ready new_n31 new_n32
+11 1
+.names ins_valid[1] new_n32 ins_ready[1]
+10 0
+.names ins_valid[2] new_n26 new_n34
+11 1
+.names outs_ready new_n34 new_n35
+11 1
+.names ins_valid[2] new_n35 ins_ready[2]
+10 0
+.names ins_valid[3] new_n30 new_n37
+11 1
+.names outs_ready new_n37 new_n38
+11 1
+.names ins_valid[3] new_n38 ins_ready[3]
+10 0
+.names ins_valid[4] new_n26 new_n40
+11 1
+.names outs_ready new_n40 new_n41
+11 1
+.names ins_valid[4] new_n41 ins_ready[4]
+10 0
+.names ins_valid[5] new_n30 new_n43
+11 1
+.names outs_ready new_n43 new_n44
+11 1
+.names ins_valid[5] new_n44 ins_ready[5]
+10 0
+.names ins_valid[6] new_n26 new_n46
+11 1
+.names outs_ready new_n46 new_n47
+11 1
+.names ins_valid[6] new_n47 ins_ready[6]
+10 0
+.names ins_valid[7] new_n30 new_n49
+11 1
+.names outs_ready new_n49 new_n50
+11 1
+.names ins_valid[7] new_n50 ins_ready[7]
+10 0
+.names ins_valid[8] new_n26 new_n52
+11 1
+.names outs_ready new_n52 new_n53
+11 1
+.names ins_valid[8] new_n53 ins_ready[8]
+10 0
+.names new_n27 new_n31 new_n55
+00 1
+.names new_n34 new_n37 new_n56
+00 1
+.names new_n40 new_n43 new_n57
+00 1
+.names new_n46 new_n49 new_n58
+00 1
+.names new_n52 new_n58 new_n59
+01 1
+.names new_n56 new_n57 new_n60
+11 1
+.names new_n55 new_n60 new_n61
+11 1
+.names new_n59 new_n61 outs_valid
+11 0
+.names outs_ready outs_valid new_n63
+11 1
+.names index_valid new_n63 index_ready
+10 0
+.end

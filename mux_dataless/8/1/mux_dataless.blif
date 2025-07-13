@@ -1,0 +1,78 @@
+# Benchmark "mux_dataless" written by ABC on Sun Jul 13 20:28:19 2025
+.model mux_dataless
+.inputs clk rst ins_valid[0] ins_valid[1] ins_valid[2] ins_valid[3] \
+ ins_valid[4] ins_valid[5] ins_valid[6] ins_valid[7] index index_valid \
+ outs_ready
+.outputs ins_ready[0] ins_ready[1] ins_ready[2] ins_ready[3] ins_ready[4] \
+ ins_ready[5] ins_ready[6] ins_ready[7] index_ready outs_valid
+.names index index_valid new_n24
+01 1
+.names ins_valid[0] new_n24 new_n25
+11 1
+.names outs_ready new_n25 new_n26
+11 1
+.names ins_valid[0] new_n26 ins_ready[0]
+10 0
+.names index index_valid new_n28
+11 1
+.names ins_valid[1] new_n28 new_n29
+11 1
+.names outs_ready new_n29 new_n30
+11 1
+.names ins_valid[1] new_n30 ins_ready[1]
+10 0
+.names ins_valid[2] new_n24 new_n32
+11 1
+.names outs_ready new_n32 new_n33
+11 1
+.names ins_valid[2] new_n33 ins_ready[2]
+10 0
+.names ins_valid[3] new_n28 new_n35
+11 1
+.names outs_ready new_n35 new_n36
+11 1
+.names ins_valid[3] new_n36 ins_ready[3]
+10 0
+.names ins_valid[4] new_n24 new_n38
+11 1
+.names outs_ready new_n38 new_n39
+11 1
+.names ins_valid[4] new_n39 ins_ready[4]
+10 0
+.names ins_valid[5] new_n28 new_n41
+11 1
+.names outs_ready new_n41 new_n42
+11 1
+.names ins_valid[5] new_n42 ins_ready[5]
+10 0
+.names ins_valid[6] new_n24 new_n44
+11 1
+.names outs_ready new_n44 new_n45
+11 1
+.names ins_valid[6] new_n45 ins_ready[6]
+10 0
+.names ins_valid[7] new_n28 new_n47
+11 1
+.names outs_ready new_n47 new_n48
+11 1
+.names ins_valid[7] new_n48 ins_ready[7]
+10 0
+.names new_n25 new_n29 new_n50
+00 1
+.names new_n32 new_n35 new_n51
+00 1
+.names new_n38 new_n41 new_n52
+00 1
+.names new_n44 new_n47 new_n53
+00 1
+.names new_n52 new_n53 new_n54
+11 1
+.names new_n50 new_n51 new_n55
+11 1
+.names new_n54 new_n55 outs_valid
+11 0
+.names outs_ready outs_valid new_n57
+11 1
+.names index_valid new_n57 index_ready
+10 0
+.end

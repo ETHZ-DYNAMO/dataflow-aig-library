@@ -1,0 +1,28 @@
+#!/bin/bash
+abc -c "read_blif /home/ubuntu/dynamatic/data/aig/mem_controller/10/25/13/mem_controller_10_25_13_yosys.blif;
+        strash;
+        rewrite;
+        b;
+        refactor;
+        b;
+        rewrite;
+        b;
+        refactor;
+        b;
+        rewrite;
+        b;
+        refactor;
+        b;
+        rewrite;
+        b;
+        refactor;
+        b;
+        rewrite;
+        b;
+        refactor;
+        b;
+        rewrite;
+        b;
+        refactor;
+        b;
+        write_blif /home/ubuntu/dynamatic/data/aig/mem_controller/10/25/13/mem_controller.blif"

@@ -1,0 +1,406 @@
+# Benchmark "shift_reg_break_dv" written by ABC on Sun Jul 13 20:25:51 2025
+.model shift_reg_break_dv
+.inputs clk rst ins[0] ins[1] ins[2] ins[3] ins[4] ins[5] ins[6] ins[7] \
+ ins[8] ins[9] ins[10] ins[11] ins[12] ins[13] ins[14] ins[15] ins_valid \
+ outs_ready
+.outputs ins_ready outs[0] outs[1] outs[2] outs[3] outs[4] outs[5] outs[6] \
+ outs[7] outs[8] outs[9] outs[10] outs[11] outs[12] outs[13] outs[14] \
+ outs[15] outs_valid
+
+.latch        n78 Memory[0][0]  2
+.latch        n83 Memory[0][1]  2
+.latch        n88 Memory[0][2]  2
+.latch        n93 Memory[0][3]  2
+.latch        n98 Memory[0][4]  2
+.latch       n103 Memory[0][5]  2
+.latch       n108 Memory[0][6]  2
+.latch       n113 Memory[0][7]  2
+.latch       n118 Memory[0][8]  2
+.latch       n123 Memory[0][9]  2
+.latch       n128 Memory[0][10]  2
+.latch       n133 Memory[0][11]  2
+.latch       n138 Memory[0][12]  2
+.latch       n143 Memory[0][13]  2
+.latch       n148 Memory[0][14]  2
+.latch       n153 Memory[0][15]  2
+.latch       n158 Memory[1][0]  2
+.latch       n163 Memory[1][1]  2
+.latch       n168 Memory[1][2]  2
+.latch       n173 Memory[1][3]  2
+.latch       n178 Memory[1][4]  2
+.latch       n183 Memory[1][5]  2
+.latch       n188 Memory[1][6]  2
+.latch       n193 Memory[1][7]  2
+.latch       n198 Memory[1][8]  2
+.latch       n203 Memory[1][9]  2
+.latch       n208 Memory[1][10]  2
+.latch       n213 Memory[1][11]  2
+.latch       n218 Memory[1][12]  2
+.latch       n223 Memory[1][13]  2
+.latch       n228 Memory[1][14]  2
+.latch       n233 Memory[1][15]  2
+.latch       n238 Memory[2][0]  2
+.latch       n243 Memory[2][1]  2
+.latch       n248 Memory[2][2]  2
+.latch       n253 Memory[2][3]  2
+.latch       n258 Memory[2][4]  2
+.latch       n263 Memory[2][5]  2
+.latch       n268 Memory[2][6]  2
+.latch       n273 Memory[2][7]  2
+.latch       n278 Memory[2][8]  2
+.latch       n283 Memory[2][9]  2
+.latch       n288 Memory[2][10]  2
+.latch       n293 Memory[2][11]  2
+.latch       n298 Memory[2][12]  2
+.latch       n303 Memory[2][13]  2
+.latch       n308 Memory[2][14]  2
+.latch       n313 Memory[2][15]  2
+.latch       n318 control.valid_reg[0]  2
+.latch       n323 control.valid_reg[1]  2
+.latch       n328 control.valid_reg[2]  2
+
+.names outs_ready control.valid_reg[2] ins_ready
+01 0
+.names Memory[0][0] ins_ready new_n193_1
+10 1
+.names ins[0] ins_ready new_n194
+11 1
+.names new_n193_1 new_n194 n78
+00 0
+.names Memory[0][1] ins_ready new_n196
+10 1
+.names ins[1] ins_ready new_n197
+11 1
+.names new_n196 new_n197 n83
+00 0
+.names Memory[0][2] ins_ready new_n199
+10 1
+.names ins[2] ins_ready new_n200
+11 1
+.names new_n199 new_n200 n88
+00 0
+.names Memory[0][3] ins_ready new_n202
+10 1
+.names ins[3] ins_ready new_n203_1
+11 1
+.names new_n202 new_n203_1 n93
+00 0
+.names Memory[0][4] ins_ready new_n205
+10 1
+.names ins[4] ins_ready new_n206
+11 1
+.names new_n205 new_n206 n98
+00 0
+.names Memory[0][5] ins_ready new_n208_1
+10 1
+.names ins[5] ins_ready new_n209
+11 1
+.names new_n208_1 new_n209 n103
+00 0
+.names Memory[0][6] ins_ready new_n211
+10 1
+.names ins[6] ins_ready new_n212
+11 1
+.names new_n211 new_n212 n108
+00 0
+.names Memory[0][7] ins_ready new_n214
+10 1
+.names ins[7] ins_ready new_n215
+11 1
+.names new_n214 new_n215 n113
+00 0
+.names Memory[0][8] ins_ready new_n217
+10 1
+.names ins[8] ins_ready new_n218_1
+11 1
+.names new_n217 new_n218_1 n118
+00 0
+.names Memory[0][9] ins_ready new_n220
+10 1
+.names ins[9] ins_ready new_n221
+11 1
+.names new_n220 new_n221 n123
+00 0
+.names Memory[0][10] ins_ready new_n223_1
+10 1
+.names ins[10] ins_ready new_n224
+11 1
+.names new_n223_1 new_n224 n128
+00 0
+.names Memory[0][11] ins_ready new_n226
+10 1
+.names ins[11] ins_ready new_n227
+11 1
+.names new_n226 new_n227 n133
+00 0
+.names Memory[0][12] ins_ready new_n229
+10 1
+.names ins[12] ins_ready new_n230
+11 1
+.names new_n229 new_n230 n138
+00 0
+.names Memory[0][13] ins_ready new_n232
+10 1
+.names ins[13] ins_ready new_n233_1
+11 1
+.names new_n232 new_n233_1 n143
+00 0
+.names Memory[0][14] ins_ready new_n235
+10 1
+.names ins[14] ins_ready new_n236
+11 1
+.names new_n235 new_n236 n148
+00 0
+.names Memory[0][15] ins_ready new_n238_1
+10 1
+.names ins[15] ins_ready new_n239
+11 1
+.names new_n238_1 new_n239 n153
+00 0
+.names Memory[1][0] ins_ready new_n241
+10 1
+.names Memory[0][0] ins_ready new_n242
+11 1
+.names new_n241 new_n242 n158
+00 0
+.names Memory[1][1] ins_ready new_n244
+10 1
+.names Memory[0][1] ins_ready new_n245
+11 1
+.names new_n244 new_n245 n163
+00 0
+.names Memory[1][2] ins_ready new_n247
+10 1
+.names Memory[0][2] ins_ready new_n248_1
+11 1
+.names new_n247 new_n248_1 n168
+00 0
+.names Memory[1][3] ins_ready new_n250
+10 1
+.names Memory[0][3] ins_ready new_n251
+11 1
+.names new_n250 new_n251 n173
+00 0
+.names Memory[1][4] ins_ready new_n253_1
+10 1
+.names Memory[0][4] ins_ready new_n254
+11 1
+.names new_n253_1 new_n254 n178
+00 0
+.names Memory[1][5] ins_ready new_n256
+10 1
+.names Memory[0][5] ins_ready new_n257
+11 1
+.names new_n256 new_n257 n183
+00 0
+.names Memory[1][6] ins_ready new_n259
+10 1
+.names Memory[0][6] ins_ready new_n260
+11 1
+.names new_n259 new_n260 n188
+00 0
+.names Memory[1][7] ins_ready new_n262
+10 1
+.names Memory[0][7] ins_ready new_n263_1
+11 1
+.names new_n262 new_n263_1 n193
+00 0
+.names Memory[1][8] ins_ready new_n265
+10 1
+.names Memory[0][8] ins_ready new_n266
+11 1
+.names new_n265 new_n266 n198
+00 0
+.names Memory[1][9] ins_ready new_n268_1
+10 1
+.names Memory[0][9] ins_ready new_n269
+11 1
+.names new_n268_1 new_n269 n203
+00 0
+.names Memory[1][10] ins_ready new_n271
+10 1
+.names Memory[0][10] ins_ready new_n272
+11 1
+.names new_n271 new_n272 n208
+00 0
+.names Memory[1][11] ins_ready new_n274
+10 1
+.names Memory[0][11] ins_ready new_n275
+11 1
+.names new_n274 new_n275 n213
+00 0
+.names Memory[1][12] ins_ready new_n277
+10 1
+.names Memory[0][12] ins_ready new_n278_1
+11 1
+.names new_n277 new_n278_1 n218
+00 0
+.names Memory[1][13] ins_ready new_n280
+10 1
+.names Memory[0][13] ins_ready new_n281
+11 1
+.names new_n280 new_n281 n223
+00 0
+.names Memory[1][14] ins_ready new_n283_1
+10 1
+.names Memory[0][14] ins_ready new_n284
+11 1
+.names new_n283_1 new_n284 n228
+00 0
+.names Memory[1][15] ins_ready new_n286
+10 1
+.names Memory[0][15] ins_ready new_n287
+11 1
+.names new_n286 new_n287 n233
+00 0
+.names Memory[2][0] ins_ready new_n289
+10 1
+.names Memory[1][0] ins_ready new_n290
+11 1
+.names new_n289 new_n290 n238
+00 0
+.names Memory[2][1] ins_ready new_n292
+10 1
+.names Memory[1][1] ins_ready new_n293_1
+11 1
+.names new_n292 new_n293_1 n243
+00 0
+.names Memory[2][2] ins_ready new_n295
+10 1
+.names Memory[1][2] ins_ready new_n296
+11 1
+.names new_n295 new_n296 n248
+00 0
+.names Memory[2][3] ins_ready new_n298_1
+10 1
+.names Memory[1][3] ins_ready new_n299
+11 1
+.names new_n298_1 new_n299 n253
+00 0
+.names Memory[2][4] ins_ready new_n301
+10 1
+.names Memory[1][4] ins_ready new_n302
+11 1
+.names new_n301 new_n302 n258
+00 0
+.names Memory[2][5] ins_ready new_n304
+10 1
+.names Memory[1][5] ins_ready new_n305
+11 1
+.names new_n304 new_n305 n263
+00 0
+.names Memory[2][6] ins_ready new_n307
+10 1
+.names Memory[1][6] ins_ready new_n308_1
+11 1
+.names new_n307 new_n308_1 n268
+00 0
+.names Memory[2][7] ins_ready new_n310
+10 1
+.names Memory[1][7] ins_ready new_n311
+11 1
+.names new_n310 new_n311 n273
+00 0
+.names Memory[2][8] ins_ready new_n313_1
+10 1
+.names Memory[1][8] ins_ready new_n314
+11 1
+.names new_n313_1 new_n314 n278
+00 0
+.names Memory[2][9] ins_ready new_n316
+10 1
+.names Memory[1][9] ins_ready new_n317
+11 1
+.names new_n316 new_n317 n283
+00 0
+.names Memory[2][10] ins_ready new_n319
+10 1
+.names Memory[1][10] ins_ready new_n320
+11 1
+.names new_n319 new_n320 n288
+00 0
+.names Memory[2][11] ins_ready new_n322
+10 1
+.names Memory[1][11] ins_ready new_n323_1
+11 1
+.names new_n322 new_n323_1 n293
+00 0
+.names Memory[2][12] ins_ready new_n325
+10 1
+.names Memory[1][12] ins_ready new_n326
+11 1
+.names new_n325 new_n326 n298
+00 0
+.names Memory[2][13] ins_ready new_n328_1
+10 1
+.names Memory[1][13] ins_ready new_n329
+11 1
+.names new_n328_1 new_n329 n303
+00 0
+.names Memory[2][14] ins_ready new_n331
+10 1
+.names Memory[1][14] ins_ready new_n332
+11 1
+.names new_n331 new_n332 n308
+00 0
+.names Memory[2][15] ins_ready new_n334
+10 1
+.names Memory[1][15] ins_ready new_n335
+11 1
+.names new_n334 new_n335 n313
+00 0
+.names control.valid_reg[0] ins_ready new_n337
+10 1
+.names ins_valid ins_ready new_n338
+11 1
+.names new_n337 new_n338 new_n339
+00 1
+.names rst new_n339 n318
+00 1
+.names control.valid_reg[1] ins_ready new_n341
+10 1
+.names control.valid_reg[0] ins_ready new_n342
+11 1
+.names new_n341 new_n342 new_n343
+00 1
+.names rst new_n343 n323
+00 1
+.names control.valid_reg[1] ins_ready new_n345
+01 1
+.names rst new_n345 n328
+00 1
+.names Memory[2][0] outs[0]
+1 1
+.names Memory[2][1] outs[1]
+1 1
+.names Memory[2][2] outs[2]
+1 1
+.names Memory[2][3] outs[3]
+1 1
+.names Memory[2][4] outs[4]
+1 1
+.names Memory[2][5] outs[5]
+1 1
+.names Memory[2][6] outs[6]
+1 1
+.names Memory[2][7] outs[7]
+1 1
+.names Memory[2][8] outs[8]
+1 1
+.names Memory[2][9] outs[9]
+1 1
+.names Memory[2][10] outs[10]
+1 1
+.names Memory[2][11] outs[11]
+1 1
+.names Memory[2][12] outs[12]
+1 1
+.names Memory[2][13] outs[13]
+1 1
+.names Memory[2][14] outs[14]
+1 1
+.names Memory[2][15] outs[15]
+1 1
+.names control.valid_reg[2] outs_valid
+1 1
+.end

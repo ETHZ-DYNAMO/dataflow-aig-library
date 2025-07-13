@@ -1,0 +1,13 @@
+#!/bin/bash
+yosys -p "read_verilog -defer /home/ubuntu/dynamatic/data/verilog/handshake/load.v
+        read_verilog -defer /home/ubuntu/dynamatic/data/verilog/handshake/tehb.v
+        read_verilog -defer /home/ubuntu/dynamatic/data/verilog/handshake/dataless/tehb.v
+        chparam -set DATA_TYPE 3 -set ADDR_TYPE 3 load
+        hierarchy -top load;
+        proc;
+        opt -nodffe -nosdff;
+        memory -nomap;
+        techmap;
+        flatten;
+        clean;
+        write_blif /home/ubuntu/dynamatic/data/aig/load/3/3/load_3_3_yosys.blif" > /dev/null

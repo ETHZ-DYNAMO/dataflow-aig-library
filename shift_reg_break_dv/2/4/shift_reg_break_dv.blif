@@ -1,0 +1,89 @@
+# Benchmark "shift_reg_break_dv" written by ABC on Sun Jul 13 20:25:46 2025
+.model shift_reg_break_dv
+.inputs clk rst ins[0] ins[1] ins[2] ins[3] ins_valid outs_ready
+.outputs ins_ready outs[0] outs[1] outs[2] outs[3] outs_valid
+
+.latch        n30 Memory[0][0]  2
+.latch        n35 Memory[0][1]  2
+.latch        n40 Memory[0][2]  2
+.latch        n45 Memory[0][3]  2
+.latch        n50 Memory[1][0]  2
+.latch        n55 Memory[1][1]  2
+.latch        n60 Memory[1][2]  2
+.latch        n65 Memory[1][3]  2
+.latch        n70 control.valid_reg[0]  2
+.latch        n75 control.valid_reg[1]  2
+
+.names outs_ready control.valid_reg[1] ins_ready
+01 0
+.names Memory[0][0] ins_ready new_n46
+10 1
+.names ins[0] ins_ready new_n47
+11 1
+.names new_n46 new_n47 n30
+00 0
+.names Memory[0][1] ins_ready new_n49
+10 1
+.names ins[1] ins_ready new_n50_1
+11 1
+.names new_n49 new_n50_1 n35
+00 0
+.names Memory[0][2] ins_ready new_n52
+10 1
+.names ins[2] ins_ready new_n53
+11 1
+.names new_n52 new_n53 n40
+00 0
+.names Memory[0][3] ins_ready new_n55_1
+10 1
+.names ins[3] ins_ready new_n56
+11 1
+.names new_n55_1 new_n56 n45
+00 0
+.names Memory[1][0] ins_ready new_n58
+10 1
+.names Memory[0][0] ins_ready new_n59
+11 1
+.names new_n58 new_n59 n50
+00 0
+.names Memory[1][1] ins_ready new_n61
+10 1
+.names Memory[0][1] ins_ready new_n62
+11 1
+.names new_n61 new_n62 n55
+00 0
+.names Memory[1][2] ins_ready new_n64
+10 1
+.names Memory[0][2] ins_ready new_n65_1
+11 1
+.names new_n64 new_n65_1 n60
+00 0
+.names Memory[1][3] ins_ready new_n67
+10 1
+.names Memory[0][3] ins_ready new_n68
+11 1
+.names new_n67 new_n68 n65
+00 0
+.names control.valid_reg[0] ins_ready new_n70_1
+10 1
+.names ins_valid ins_ready new_n71
+11 1
+.names new_n70_1 new_n71 new_n72
+00 1
+.names rst new_n72 n70
+00 1
+.names control.valid_reg[0] ins_ready new_n74
+01 1
+.names rst new_n74 n75
+00 1
+.names Memory[1][0] outs[0]
+1 1
+.names Memory[1][1] outs[1]
+1 1
+.names Memory[1][2] outs[2]
+1 1
+.names Memory[1][3] outs[3]
+1 1
+.names control.valid_reg[1] outs_valid
+1 1
+.end

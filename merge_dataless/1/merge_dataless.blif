@@ -1,0 +1,9 @@
+# Benchmark "merge_dataless" written by ABC on Sun Jul 13 20:31:13 2025
+.model merge_dataless
+.inputs clk rst ins_valid outs_ready
+.outputs ins_ready outs_valid
+.names ins_valid outs_ready ins_ready
+11 1
+.names ins_valid outs_valid
+1 1
+.end

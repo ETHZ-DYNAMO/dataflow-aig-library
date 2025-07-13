@@ -1,0 +1,105 @@
+# Benchmark "shift_reg_break_dv" written by ABC on Sun Jul 13 20:25:46 2025
+.model shift_reg_break_dv
+.inputs clk rst ins[0] ins[1] ins[2] ins[3] ins[4] ins_valid outs_ready
+.outputs ins_ready outs[0] outs[1] outs[2] outs[3] outs[4] outs_valid
+
+.latch        n34 Memory[0][0]  2
+.latch        n39 Memory[0][1]  2
+.latch        n44 Memory[0][2]  2
+.latch        n49 Memory[0][3]  2
+.latch        n54 Memory[0][4]  2
+.latch        n59 Memory[1][0]  2
+.latch        n64 Memory[1][1]  2
+.latch        n69 Memory[1][2]  2
+.latch        n74 Memory[1][3]  2
+.latch        n79 Memory[1][4]  2
+.latch        n84 control.valid_reg[0]  2
+.latch        n89 control.valid_reg[1]  2
+
+.names outs_ready control.valid_reg[1] ins_ready
+01 0
+.names Memory[0][0] ins_ready new_n54_1
+10 1
+.names ins[0] ins_ready new_n55
+11 1
+.names new_n54_1 new_n55 n34
+00 0
+.names Memory[0][1] ins_ready new_n57
+10 1
+.names ins[1] ins_ready new_n58
+11 1
+.names new_n57 new_n58 n39
+00 0
+.names Memory[0][2] ins_ready new_n60
+10 1
+.names ins[2] ins_ready new_n61
+11 1
+.names new_n60 new_n61 n44
+00 0
+.names Memory[0][3] ins_ready new_n63
+10 1
+.names ins[3] ins_ready new_n64_1
+11 1
+.names new_n63 new_n64_1 n49
+00 0
+.names Memory[0][4] ins_ready new_n66
+10 1
+.names ins[4] ins_ready new_n67
+11 1
+.names new_n66 new_n67 n54
+00 0
+.names Memory[1][0] ins_ready new_n69_1
+10 1
+.names Memory[0][0] ins_ready new_n70
+11 1
+.names new_n69_1 new_n70 n59
+00 0
+.names Memory[1][1] ins_ready new_n72
+10 1
+.names Memory[0][1] ins_ready new_n73
+11 1
+.names new_n72 new_n73 n64
+00 0
+.names Memory[1][2] ins_ready new_n75
+10 1
+.names Memory[0][2] ins_ready new_n76
+11 1
+.names new_n75 new_n76 n69
+00 0
+.names Memory[1][3] ins_ready new_n78
+10 1
+.names Memory[0][3] ins_ready new_n79_1
+11 1
+.names new_n78 new_n79_1 n74
+00 0
+.names Memory[1][4] ins_ready new_n81
+10 1
+.names Memory[0][4] ins_ready new_n82
+11 1
+.names new_n81 new_n82 n79
+00 0
+.names control.valid_reg[0] ins_ready new_n84_1
+10 1
+.names ins_valid ins_ready new_n85
+11 1
+.names new_n84_1 new_n85 new_n86
+00 1
+.names rst new_n86 n84
+00 1
+.names control.valid_reg[0] ins_ready new_n88
+01 1
+.names rst new_n88 n89
+00 1
+.names Memory[1][0] outs[0]
+1 1
+.names Memory[1][1] outs[1]
+1 1
+.names Memory[1][2] outs[2]
+1 1
+.names Memory[1][3] outs[3]
+1 1
+.names Memory[1][4] outs[4]
+1 1
+.names control.valid_reg[1] outs_valid
+1 1
+.end

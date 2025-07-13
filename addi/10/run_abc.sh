@@ -1,0 +1,28 @@
+#!/bin/bash
+abc -c "read_blif /home/ubuntu/dynamatic/data/aig/addi/10/addi_10_yosys.blif;
+        strash;
+        rewrite;
+        b;
+        refactor;
+        b;
+        rewrite;
+        b;
+        refactor;
+        b;
+        rewrite;
+        b;
+        refactor;
+        b;
+        rewrite;
+        b;
+        refactor;
+        b;
+        rewrite;
+        b;
+        refactor;
+        b;
+        rewrite;
+        b;
+        refactor;
+        b;
+        write_blif /home/ubuntu/dynamatic/data/aig/addi/10/addi.blif"

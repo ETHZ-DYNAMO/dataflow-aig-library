@@ -1,0 +1,44 @@
+# Benchmark "mux" written by ABC on Sun Jul 13 20:28:31 2025
+.model mux
+.inputs clk rst ins[0] ins[1] ins_valid[0] ins_valid[1] index[0] index[1] \
+ index_valid outs_ready
+.outputs ins_ready[0] ins_ready[1] index_ready outs outs_valid
+.names index[1] index_valid new_n16
+01 1
+.names ins_valid[0] index[0] new_n17
+10 1
+.names new_n16 new_n17 new_n18
+11 1
+.names outs_ready new_n18 new_n19
+11 1
+.names ins_valid[0] new_n19 new_n20
+10 1
+.names rst new_n20 ins_ready[0]
+00 1
+.names ins_valid[1] index[0] new_n22
+11 1
+.names new_n16 new_n22 new_n23
+11 1
+.names outs_ready new_n23 new_n24
+11 1
+.names ins_valid[1] new_n24 new_n25
+10 1
+.names rst new_n25 ins_ready[1]
+00 1
+.names new_n18 new_n23 new_n27
+00 1
+.names rst new_n27 outs_valid
+00 1
+.names outs_ready outs_valid new_n29
+11 1
+.names index_valid new_n29 index_ready
+10 0
+.names ins[0] new_n23 new_n31
+10 1
+.names ins[1] new_n23 new_n32
+11 1
+.names new_n31 new_n32 new_n33
+00 1
+.names rst new_n33 outs
+00 1
+.end

@@ -1,0 +1,67 @@
+# Benchmark "one_slot_break_dvr" written by ABC on Sun Jul 13 20:25:38 2025
+.model one_slot_break_dvr
+.inputs clk rst ins[0] ins[1] ins[2] ins[3] ins_valid outs_ready
+.outputs ins_ready outs[0] outs[1] outs[2] outs[3] outs_valid
+
+.latch        n30 dataReg[0]  0
+.latch        n35 dataReg[1]  0
+.latch        n40 dataReg[2]  0
+.latch        n45 dataReg[3]  0
+.latch        n50 control.outputValid  0
+.latch        n55 control.inputReady  1
+
+.names ins_valid control.inputReady new_n33
+11 1
+.names dataReg[0] new_n33 new_n34
+10 1
+.names ins[0] new_n33 new_n35_1
+11 1
+.names new_n34 new_n35_1 new_n36
+00 1
+.names rst new_n36 n30
+00 1
+.names dataReg[1] new_n33 new_n38
+10 1
+.names ins[1] new_n33 new_n39
+11 1
+.names new_n38 new_n39 new_n40_1
+00 1
+.names rst new_n40_1 n35
+00 1
+.names dataReg[2] new_n33 new_n42
+10 1
+.names ins[2] new_n33 new_n43
+11 1
+.names new_n42 new_n43 new_n44
+00 1
+.names rst new_n44 n40
+00 1
+.names dataReg[3] new_n33 new_n46
+10 1
+.names ins[3] new_n33 new_n47
+11 1
+.names new_n46 new_n47 new_n48
+00 1
+.names rst new_n48 n45
+00 1
+.names outs_ready control.outputValid new_n50_1
+01 1
+.names new_n33 new_n50_1 new_n51
+00 1
+.names rst new_n51 n50
+00 1
+.names n50 n55
+0 1
+.names control.inputReady ins_ready
+1 1
+.names dataReg[0] outs[0]
+1 1
+.names dataReg[1] outs[1]
+1 1
+.names dataReg[2] outs[2]
+1 1
+.names dataReg[3] outs[3]
+1 1
+.names control.outputValid outs_valid
+1 1
+.end

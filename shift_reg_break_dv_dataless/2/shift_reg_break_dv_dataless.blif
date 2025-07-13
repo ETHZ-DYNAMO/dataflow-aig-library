@@ -1,0 +1,25 @@
+# Benchmark "shift_reg_break_dv_dataless" written by ABC on Sun Jul 13 20:25:41 2025
+.model shift_reg_break_dv_dataless
+.inputs clk rst ins_valid outs_ready
+.outputs outs_valid ins_ready
+
+.latch        n14 valid_reg[0]  2
+.latch        n19 valid_reg[1]  2
+
+.names outs_ready valid_reg[1] ins_ready
+01 0
+.names valid_reg[0] ins_ready new_n14_1
+10 1
+.names ins_valid ins_ready new_n15
+11 1
+.names new_n14_1 new_n15 new_n16
+00 1
+.names rst new_n16 n14
+00 1
+.names valid_reg[0] ins_ready new_n18
+01 1
+.names rst new_n18 n19
+00 1
+.names valid_reg[1] outs_valid
+1 1
+.end

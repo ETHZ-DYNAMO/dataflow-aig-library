@@ -1,0 +1,7 @@
+# Benchmark "sink_dataless" written by ABC on Sun Jul 13 20:28:14 2025
+.model sink_dataless
+.inputs clk rst ins_valid
+.outputs ins_ready
+.names ins_ready
+ 1
+.end

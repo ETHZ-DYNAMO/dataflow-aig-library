@@ -1,0 +1,118 @@
+# Benchmark "mux" written by ABC on Sun Jul 13 20:29:15 2025
+.model mux
+.inputs clk rst ins[0] ins[1] ins[2] ins[3] ins[4] ins_valid[0] \
+ ins_valid[1] ins_valid[2] ins_valid[3] ins_valid[4] index[0] index[1] \
+ index[2] index_valid outs_ready
+.outputs ins_ready[0] ins_ready[1] ins_ready[2] ins_ready[3] ins_ready[4] \
+ index_ready outs outs_valid
+.names index[0] index[1] new_n26
+00 1
+.names ins_valid[0] index[2] new_n27
+10 1
+.names index_valid new_n27 new_n28
+11 1
+.names new_n26 new_n28 new_n29
+11 1
+.names outs_ready new_n29 new_n30
+11 1
+.names ins_valid[0] new_n30 new_n31
+10 1
+.names rst new_n31 ins_ready[0]
+00 1
+.names ins_valid[1] index[0] new_n33
+11 1
+.names index[1] index[2] new_n34
+00 1
+.names index_valid new_n34 new_n35
+11 1
+.names new_n33 new_n35 new_n36
+11 1
+.names outs_ready new_n36 new_n37
+11 1
+.names ins_valid[1] new_n37 new_n38
+10 1
+.names rst new_n38 ins_ready[1]
+00 1
+.names index[1] index[2] new_n40
+10 1
+.names index_valid new_n40 new_n41
+11 1
+.names ins_valid[2] index[0] new_n42
+10 1
+.names new_n41 new_n42 new_n43
+11 1
+.names outs_ready new_n43 new_n44
+11 1
+.names ins_valid[2] new_n44 new_n45
+10 1
+.names rst new_n45 ins_ready[2]
+00 1
+.names ins_valid[3] index[0] new_n47
+11 1
+.names new_n41 new_n47 new_n48
+11 1
+.names outs_ready new_n48 new_n49
+11 1
+.names ins_valid[3] new_n49 new_n50
+10 1
+.names rst new_n50 ins_ready[3]
+00 1
+.names ins_valid[4] index[2] new_n52
+11 1
+.names index_valid new_n52 new_n53
+11 1
+.names new_n26 new_n53 new_n54
+11 1
+.names outs_ready new_n54 new_n55
+11 1
+.names ins_valid[4] new_n55 new_n56
+10 1
+.names rst new_n56 ins_ready[4]
+00 1
+.names new_n29 new_n36 new_n58
+00 1
+.names new_n43 new_n48 new_n59
+00 1
+.names new_n54 new_n59 new_n60
+01 1
+.names new_n58 new_n60 new_n61
+11 1
+.names rst new_n61 outs_valid
+00 1
+.names outs_ready outs_valid new_n63
+11 1
+.names index_valid new_n63 index_ready
+10 0
+.names ins[0] new_n54 new_n65
+10 1
+.names ins[4] new_n54 new_n66
+11 1
+.names new_n65 new_n66 new_n67
+00 1
+.names new_n48 new_n67 new_n68
+00 1
+.names ins[3] new_n48 new_n69
+11 1
+.names new_n68 new_n69 new_n70
+00 1
+.names new_n43 new_n70 new_n71
+00 1
+.names ins[2] new_n43 new_n72
+11 1
+.names new_n71 new_n72 new_n73
+00 1
+.names new_n36 new_n73 new_n74
+00 1
+.names ins[1] new_n36 new_n75
+11 1
+.names new_n74 new_n75 new_n76
+00 1
+.names new_n29 new_n76 new_n77
+00 1
+.names ins[0] new_n29 new_n78
+11 1
+.names new_n77 new_n78 new_n79
+00 1
+.names rst new_n79 outs
+00 1
+.end

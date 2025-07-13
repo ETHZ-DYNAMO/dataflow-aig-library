@@ -1,0 +1,34 @@
+# Benchmark "one_slot_break_dvr" written by ABC on Sun Jul 13 20:25:37 2025
+.model one_slot_break_dvr
+.inputs clk rst ins ins_valid outs_ready
+.outputs ins_ready outs outs_valid
+
+.latch        n18    dataReg  0
+.latch        n23 control.outputValid  0
+.latch        n28 control.inputReady  1
+
+.names ins_valid control.inputReady new_n18_1
+11 1
+.names dataReg new_n18_1 new_n19
+10 1
+.names ins new_n18_1 new_n20
+11 1
+.names new_n19 new_n20 new_n21
+00 1
+.names rst new_n21 n18
+00 1
+.names outs_ready control.outputValid new_n23_1
+01 1
+.names new_n18_1 new_n23_1 new_n24
+00 1
+.names rst new_n24 n23
+00 1
+.names n23 n28
+0 1
+.names control.inputReady ins_ready
+1 1
+.names dataReg outs
+1 1
+.names control.outputValid outs_valid
+1 1
+.end

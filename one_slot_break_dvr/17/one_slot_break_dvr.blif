@@ -1,0 +1,214 @@
+# Benchmark "one_slot_break_dvr" written by ABC on Sun Jul 13 20:25:39 2025
+.model one_slot_break_dvr
+.inputs clk rst ins[0] ins[1] ins[2] ins[3] ins[4] ins[5] ins[6] ins[7] \
+ ins[8] ins[9] ins[10] ins[11] ins[12] ins[13] ins[14] ins[15] ins[16] \
+ ins_valid outs_ready
+.outputs ins_ready outs[0] outs[1] outs[2] outs[3] outs[4] outs[5] outs[6] \
+ outs[7] outs[8] outs[9] outs[10] outs[11] outs[12] outs[13] outs[14] \
+ outs[15] outs[16] outs_valid
+
+.latch        n82 dataReg[0]  0
+.latch        n87 dataReg[1]  0
+.latch        n92 dataReg[2]  0
+.latch        n97 dataReg[3]  0
+.latch       n102 dataReg[4]  0
+.latch       n107 dataReg[5]  0
+.latch       n112 dataReg[6]  0
+.latch       n117 dataReg[7]  0
+.latch       n122 dataReg[8]  0
+.latch       n127 dataReg[9]  0
+.latch       n132 dataReg[10]  0
+.latch       n137 dataReg[11]  0
+.latch       n142 dataReg[12]  0
+.latch       n147 dataReg[13]  0
+.latch       n152 dataReg[14]  0
+.latch       n157 dataReg[15]  0
+.latch       n162 dataReg[16]  0
+.latch       n167 control.outputValid  0
+.latch       n172 control.inputReady  1
+
+.names ins_valid control.inputReady new_n98
+11 1
+.names dataReg[0] new_n98 new_n99
+10 1
+.names ins[0] new_n98 new_n100
+11 1
+.names new_n99 new_n100 new_n101
+00 1
+.names rst new_n101 n82
+00 1
+.names dataReg[1] new_n98 new_n103
+10 1
+.names ins[1] new_n98 new_n104
+11 1
+.names new_n103 new_n104 new_n105
+00 1
+.names rst new_n105 n87
+00 1
+.names dataReg[2] new_n98 new_n107_1
+10 1
+.names ins[2] new_n98 new_n108
+11 1
+.names new_n107_1 new_n108 new_n109
+00 1
+.names rst new_n109 n92
+00 1
+.names dataReg[3] new_n98 new_n111
+10 1
+.names ins[3] new_n98 new_n112_1
+11 1
+.names new_n111 new_n112_1 new_n113
+00 1
+.names rst new_n113 n97
+00 1
+.names dataReg[4] new_n98 new_n115
+10 1
+.names ins[4] new_n98 new_n116
+11 1
+.names new_n115 new_n116 new_n117_1
+00 1
+.names rst new_n117_1 n102
+00 1
+.names dataReg[5] new_n98 new_n119
+10 1
+.names ins[5] new_n98 new_n120
+11 1
+.names new_n119 new_n120 new_n121
+00 1
+.names rst new_n121 n107
+00 1
+.names dataReg[6] new_n98 new_n123
+10 1
+.names ins[6] new_n98 new_n124
+11 1
+.names new_n123 new_n124 new_n125
+00 1
+.names rst new_n125 n112
+00 1
+.names dataReg[7] new_n98 new_n127_1
+10 1
+.names ins[7] new_n98 new_n128
+11 1
+.names new_n127_1 new_n128 new_n129
+00 1
+.names rst new_n129 n117
+00 1
+.names dataReg[8] new_n98 new_n131
+10 1
+.names ins[8] new_n98 new_n132_1
+11 1
+.names new_n131 new_n132_1 new_n133
+00 1
+.names rst new_n133 n122
+00 1
+.names dataReg[9] new_n98 new_n135
+10 1
+.names ins[9] new_n98 new_n136
+11 1
+.names new_n135 new_n136 new_n137_1
+00 1
+.names rst new_n137_1 n127
+00 1
+.names dataReg[10] new_n98 new_n139
+10 1
+.names ins[10] new_n98 new_n140
+11 1
+.names new_n139 new_n140 new_n141
+00 1
+.names rst new_n141 n132
+00 1
+.names dataReg[11] new_n98 new_n143
+10 1
+.names ins[11] new_n98 new_n144
+11 1
+.names new_n143 new_n144 new_n145
+00 1
+.names rst new_n145 n137
+00 1
+.names dataReg[12] new_n98 new_n147_1
+10 1
+.names ins[12] new_n98 new_n148
+11 1
+.names new_n147_1 new_n148 new_n149
+00 1
+.names rst new_n149 n142
+00 1
+.names dataReg[13] new_n98 new_n151
+10 1
+.names ins[13] new_n98 new_n152_1
+11 1
+.names new_n151 new_n152_1 new_n153
+00 1
+.names rst new_n153 n147
+00 1
+.names dataReg[14] new_n98 new_n155
+10 1
+.names ins[14] new_n98 new_n156
+11 1
+.names new_n155 new_n156 new_n157_1
+00 1
+.names rst new_n157_1 n152
+00 1
+.names dataReg[15] new_n98 new_n159
+10 1
+.names ins[15] new_n98 new_n160
+11 1
+.names new_n159 new_n160 new_n161
+00 1
+.names rst new_n161 n157
+00 1
+.names dataReg[16] new_n98 new_n163
+10 1
+.names ins[16] new_n98 new_n164
+11 1
+.names new_n163 new_n164 new_n165
+00 1
+.names rst new_n165 n162
+00 1
+.names outs_ready control.outputValid new_n167_1
+01 1
+.names new_n98 new_n167_1 new_n168
+00 1
+.names rst new_n168 n167
+00 1
+.names n167 n172
+0 1
+.names control.inputReady ins_ready
+1 1
+.names dataReg[0] outs[0]
+1 1
+.names dataReg[1] outs[1]
+1 1
+.names dataReg[2] outs[2]
+1 1
+.names dataReg[3] outs[3]
+1 1
+.names dataReg[4] outs[4]
+1 1
+.names dataReg[5] outs[5]
+1 1
+.names dataReg[6] outs[6]
+1 1
+.names dataReg[7] outs[7]
+1 1
+.names dataReg[8] outs[8]
+1 1
+.names dataReg[9] outs[9]
+1 1
+.names dataReg[10] outs[10]
+1 1
+.names dataReg[11] outs[11]
+1 1
+.names dataReg[12] outs[12]
+1 1
+.names dataReg[13] outs[13]
+1 1
+.names dataReg[14] outs[14]
+1 1
+.names dataReg[15] outs[15]
+1 1
+.names dataReg[16] outs[16]
+1 1
+.names control.outputValid outs_valid
+1 1
+.end

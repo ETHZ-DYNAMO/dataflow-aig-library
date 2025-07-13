@@ -1,0 +1,65 @@
+# Benchmark "control_merge_dataless" written by ABC on Sun Jul 13 20:30:30 2025
+.model control_merge_dataless
+.inputs clk rst ins_valid[0] ins_valid[1] ins_valid[2] outs_ready \
+ index_ready
+.outputs ins_ready[0] ins_ready[1] ins_ready[2] outs_valid index \
+ index_valid
+
+.latch        n28 fork_dataless.regBlock[0].regblock.transmitValue  1
+.latch        n33 fork_dataless.regBlock[1].regblock.transmitValue  1
+.latch        n38 tehb.dataReg  0
+.latch        n43 tehb.control.fullReg  0
+
+.names ins_valid[0] tehb.control.fullReg ins_ready[0]
+10 1
+.names ins_valid[0] ins_valid[1] new_n27
+01 1
+.names tehb.control.fullReg new_n27 ins_ready[1]
+01 1
+.names ins_valid[0] new_n27 new_n29
+00 1
+.names ins_valid[2] new_n29 new_n30
+11 1
+.names tehb.control.fullReg new_n30 ins_ready[2]
+01 1
+.names new_n29 new_n30 new_n32
+00 1
+.names new_n30 new_n32 new_n33_1
+00 1
+.names tehb.control.fullReg new_n33_1 new_n34
+01 1
+.names fork_dataless.regBlock[0].regblock.transmitValue new_n34 outs_valid
+10 1
+.names tehb.dataReg tehb.control.fullReg new_n36
+11 1
+.names ins_ready[1] new_n36 index
+00 0
+.names fork_dataless.regBlock[1].regblock.transmitValue new_n34 index_valid
+10 1
+.names outs_ready fork_dataless.regBlock[0].regblock.transmitValue new_n39
+01 1
+.names index_ready fork_dataless.regBlock[1].regblock.transmitValue new_n40
+01 1
+.names new_n39 new_n40 new_n41
+00 1
+.names rst new_n41 new_n42
+00 1
+.names new_n34 new_n42 n43
+01 1
+.names new_n39 n43 n28
+01 0
+.names new_n40 n43 n33
+01 0
+.names tehb.control.fullReg new_n41 new_n46
+00 1
+.names new_n33_1 new_n46 new_n47
+01 1
+.names tehb.dataReg new_n47 new_n48
+10 1
+.names new_n27 new_n47 new_n49
+11 1
+.names new_n48 new_n49 new_n50
+00 1
+.names rst new_n50 n38
+00 1
+.end

@@ -1,0 +1,75 @@
+# Benchmark "control_merge" written by ABC on Sun Jul 13 14:40:01 2025
+.model control_merge
+.inputs clk rst ins[0] ins[1] ins[2] ins_valid[0] ins_valid[1] ins_valid[2] \
+ outs_ready index_ready
+.outputs ins_ready[0] ins_ready[1] ins_ready[2] outs outs_valid index \
+ index_valid
+
+.latch        n36 control.fork_dataless.regBlock[0].regblock.transmitValue  1
+.latch        n41 control.fork_dataless.regBlock[1].regblock.transmitValue  1
+.latch        n46 control.tehb.dataReg  0
+.latch        n51 control.tehb.control.fullReg  0
+
+.names ins_valid[0] control.tehb.control.fullReg ins_ready[0]
+10 1
+.names ins_valid[0] ins_valid[1] new_n31
+01 1
+.names control.tehb.control.fullReg new_n31 ins_ready[1]
+01 1
+.names ins_valid[0] new_n31 new_n33
+00 1
+.names ins_valid[2] new_n33 new_n34
+11 1
+.names control.tehb.control.fullReg new_n34 ins_ready[2]
+01 1
+.names control.tehb.dataReg control.tehb.control.fullReg new_n36_1
+11 1
+.names ins_ready[1] new_n36_1 index
+00 0
+.names ins[0] index new_n38
+10 1
+.names ins[1] index new_n39
+11 1
+.names new_n38 new_n39 outs
+00 0
+.names new_n33 new_n34 new_n41_1
+00 1
+.names new_n34 new_n41_1 new_n42
+00 1
+.names control.tehb.control.fullReg new_n42 new_n43
+01 1
+.names control.fork_dataless.regBlock[0].regblock.transmitValue new_n43 \
+ outs_valid
+10 1
+.names control.fork_dataless.regBlock[1].regblock.transmitValue new_n43 \
+ index_valid
+10 1
+.names outs_ready control.fork_dataless.regBlock[0].regblock.transmitValue \
+ new_n46_1
+01 1
+.names index_ready control.fork_dataless.regBlock[1].regblock.transmitValue \
+ new_n47
+01 1
+.names new_n46_1 new_n47 new_n48
+00 1
+.names rst new_n48 new_n49
+00 1
+.names new_n43 new_n49 n51
+01 1
+.names new_n46_1 n51 n36
+01 0
+.names new_n47 n51 n41
+01 0
+.names control.tehb.control.fullReg new_n48 new_n53
+00 1
+.names new_n42 new_n53 new_n54
+01 1
+.names control.tehb.dataReg new_n54 new_n55
+10 1
+.names new_n31 new_n54 new_n56
+11 1
+.names new_n55 new_n56 new_n57
+00 1
+.names rst new_n57 n46
+00 1
+.end

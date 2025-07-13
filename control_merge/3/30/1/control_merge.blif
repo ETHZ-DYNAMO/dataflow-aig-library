@@ -1,0 +1,261 @@
+# Benchmark "control_merge" written by ABC on Sun Jul 13 14:40:25 2025
+.model control_merge
+.inputs clk rst ins[0] ins[1] ins[2] ins[3] ins[4] ins[5] ins[6] ins[7] \
+ ins[8] ins[9] ins[10] ins[11] ins[12] ins[13] ins[14] ins[15] ins[16] \
+ ins[17] ins[18] ins[19] ins[20] ins[21] ins[22] ins[23] ins[24] ins[25] \
+ ins[26] ins[27] ins[28] ins[29] ins[30] ins[31] ins[32] ins[33] ins[34] \
+ ins[35] ins[36] ins[37] ins[38] ins[39] ins[40] ins[41] ins[42] ins[43] \
+ ins[44] ins[45] ins[46] ins[47] ins[48] ins[49] ins[50] ins[51] ins[52] \
+ ins[53] ins[54] ins[55] ins[56] ins[57] ins[58] ins[59] ins[60] ins[61] \
+ ins[62] ins[63] ins[64] ins[65] ins[66] ins[67] ins[68] ins[69] ins[70] \
+ ins[71] ins[72] ins[73] ins[74] ins[75] ins[76] ins[77] ins[78] ins[79] \
+ ins[80] ins[81] ins[82] ins[83] ins[84] ins[85] ins[86] ins[87] ins[88] \
+ ins[89] ins_valid[0] ins_valid[1] ins_valid[2] outs_ready index_ready
+.outputs ins_ready[0] ins_ready[1] ins_ready[2] outs[0] outs[1] outs[2] \
+ outs[3] outs[4] outs[5] outs[6] outs[7] outs[8] outs[9] outs[10] outs[11] \
+ outs[12] outs[13] outs[14] outs[15] outs[16] outs[17] outs[18] outs[19] \
+ outs[20] outs[21] outs[22] outs[23] outs[24] outs[25] outs[26] outs[27] \
+ outs[28] outs[29] outs_valid index index_valid
+
+.latch       n268 control.fork_dataless.regBlock[0].regblock.transmitValue  1
+.latch       n273 control.fork_dataless.regBlock[1].regblock.transmitValue  1
+.latch       n278 control.tehb.dataReg  0
+.latch       n283 control.tehb.control.fullReg  0
+
+.names ins_valid[0] control.tehb.control.fullReg ins_ready[0]
+10 1
+.names ins_valid[0] ins_valid[1] new_n147
+01 1
+.names control.tehb.control.fullReg new_n147 ins_ready[1]
+01 1
+.names ins_valid[0] new_n147 new_n149
+00 1
+.names ins_valid[2] new_n149 new_n150
+11 1
+.names control.tehb.control.fullReg new_n150 ins_ready[2]
+01 1
+.names control.tehb.dataReg control.tehb.control.fullReg new_n152
+11 1
+.names ins_ready[1] new_n152 index
+00 0
+.names ins[0] index new_n154
+10 1
+.names ins[30] index new_n155
+11 1
+.names new_n154 new_n155 outs[0]
+00 0
+.names ins[1] index new_n157
+10 1
+.names ins[31] index new_n158
+11 1
+.names new_n157 new_n158 outs[1]
+00 0
+.names ins[2] index new_n160
+10 1
+.names ins[32] index new_n161
+11 1
+.names new_n160 new_n161 outs[2]
+00 0
+.names ins[3] index new_n163
+10 1
+.names ins[33] index new_n164
+11 1
+.names new_n163 new_n164 outs[3]
+00 0
+.names ins[4] index new_n166
+10 1
+.names ins[34] index new_n167
+11 1
+.names new_n166 new_n167 outs[4]
+00 0
+.names ins[5] index new_n169
+10 1
+.names ins[35] index new_n170
+11 1
+.names new_n169 new_n170 outs[5]
+00 0
+.names ins[6] index new_n172
+10 1
+.names ins[36] index new_n173
+11 1
+.names new_n172 new_n173 outs[6]
+00 0
+.names ins[7] index new_n175
+10 1
+.names ins[37] index new_n176
+11 1
+.names new_n175 new_n176 outs[7]
+00 0
+.names ins[8] index new_n178
+10 1
+.names ins[38] index new_n179
+11 1
+.names new_n178 new_n179 outs[8]
+00 0
+.names ins[9] index new_n181
+10 1
+.names ins[39] index new_n182
+11 1
+.names new_n181 new_n182 outs[9]
+00 0
+.names ins[10] index new_n184
+10 1
+.names ins[40] index new_n185
+11 1
+.names new_n184 new_n185 outs[10]
+00 0
+.names ins[11] index new_n187
+10 1
+.names ins[41] index new_n188
+11 1
+.names new_n187 new_n188 outs[11]
+00 0
+.names ins[12] index new_n190
+10 1
+.names ins[42] index new_n191
+11 1
+.names new_n190 new_n191 outs[12]
+00 0
+.names ins[13] index new_n193
+10 1
+.names ins[43] index new_n194
+11 1
+.names new_n193 new_n194 outs[13]
+00 0
+.names ins[14] index new_n196
+10 1
+.names ins[44] index new_n197
+11 1
+.names new_n196 new_n197 outs[14]
+00 0
+.names ins[15] index new_n199
+10 1
+.names ins[45] index new_n200
+11 1
+.names new_n199 new_n200 outs[15]
+00 0
+.names ins[46] index new_n202
+11 1
+.names ins[16] index new_n203
+10 1
+.names new_n202 new_n203 outs[16]
+00 0
+.names ins[47] index new_n205
+11 1
+.names ins[17] index new_n206
+10 1
+.names new_n205 new_n206 outs[17]
+00 0
+.names ins[48] index new_n208
+11 1
+.names ins[18] index new_n209
+10 1
+.names new_n208 new_n209 outs[18]
+00 0
+.names ins[49] index new_n211
+11 1
+.names ins[19] index new_n212
+10 1
+.names new_n211 new_n212 outs[19]
+00 0
+.names ins[50] index new_n214
+11 1
+.names ins[20] index new_n215
+10 1
+.names new_n214 new_n215 outs[20]
+00 0
+.names ins[51] index new_n217
+11 1
+.names ins[21] index new_n218
+10 1
+.names new_n217 new_n218 outs[21]
+00 0
+.names ins[52] index new_n220
+11 1
+.names ins[22] index new_n221
+10 1
+.names new_n220 new_n221 outs[22]
+00 0
+.names ins[53] index new_n223
+11 1
+.names ins[23] index new_n224
+10 1
+.names new_n223 new_n224 outs[23]
+00 0
+.names ins[54] index new_n226
+11 1
+.names ins[24] index new_n227
+10 1
+.names new_n226 new_n227 outs[24]
+00 0
+.names ins[55] index new_n229
+11 1
+.names ins[25] index new_n230
+10 1
+.names new_n229 new_n230 outs[25]
+00 0
+.names ins[56] index new_n232
+11 1
+.names ins[26] index new_n233
+10 1
+.names new_n232 new_n233 outs[26]
+00 0
+.names ins[57] index new_n235
+11 1
+.names ins[27] index new_n236
+10 1
+.names new_n235 new_n236 outs[27]
+00 0
+.names ins[58] index new_n238
+11 1
+.names ins[28] index new_n239
+10 1
+.names new_n238 new_n239 outs[28]
+00 0
+.names ins[59] index new_n241
+11 1
+.names ins[29] index new_n242
+10 1
+.names new_n241 new_n242 outs[29]
+00 0
+.names new_n149 new_n150 new_n244
+00 1
+.names new_n150 new_n244 new_n245
+00 1
+.names control.tehb.control.fullReg new_n245 new_n246
+01 1
+.names control.fork_dataless.regBlock[0].regblock.transmitValue new_n246 \
+ outs_valid
+10 1
+.names control.fork_dataless.regBlock[1].regblock.transmitValue new_n246 \
+ index_valid
+10 1
+.names outs_ready control.fork_dataless.regBlock[0].regblock.transmitValue \
+ new_n249
+01 1
+.names index_ready control.fork_dataless.regBlock[1].regblock.transmitValue \
+ new_n250
+01 1
+.names new_n249 new_n250 new_n251
+00 1
+.names rst new_n251 new_n252
+00 1
+.names new_n246 new_n252 n283
+01 1
+.names new_n249 n283 n268
+01 0
+.names new_n250 n283 n273
+01 0
+.names control.tehb.control.fullReg new_n251 new_n256
+00 1
+.names new_n245 new_n256 new_n257
+01 1
+.names control.tehb.dataReg new_n257 new_n258
+10 1
+.names new_n147 new_n257 new_n259
+11 1
+.names new_n258 new_n259 new_n260
+00 1
+.names rst new_n260 n278
+00 1
+.end

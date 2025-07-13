@@ -1,0 +1,193 @@
+# Benchmark "shift_reg_break_dv" written by ABC on Sun Jul 13 20:25:54 2025
+.model shift_reg_break_dv
+.inputs clk rst ins[0] ins[1] ins[2] ins[3] ins[4] ins_valid outs_ready
+.outputs ins_ready outs[0] outs[1] outs[2] outs[3] outs[4] outs_valid
+
+.latch        n34 Memory[0][0]  2
+.latch        n39 Memory[0][1]  2
+.latch        n44 Memory[0][2]  2
+.latch        n49 Memory[0][3]  2
+.latch        n54 Memory[0][4]  2
+.latch        n59 Memory[1][0]  2
+.latch        n64 Memory[1][1]  2
+.latch        n69 Memory[1][2]  2
+.latch        n74 Memory[1][3]  2
+.latch        n79 Memory[1][4]  2
+.latch        n84 Memory[2][0]  2
+.latch        n89 Memory[2][1]  2
+.latch        n94 Memory[2][2]  2
+.latch        n99 Memory[2][3]  2
+.latch       n104 Memory[2][4]  2
+.latch       n109 Memory[3][0]  2
+.latch       n114 Memory[3][1]  2
+.latch       n119 Memory[3][2]  2
+.latch       n124 Memory[3][3]  2
+.latch       n129 Memory[3][4]  2
+.latch       n134 control.valid_reg[0]  2
+.latch       n139 control.valid_reg[1]  2
+.latch       n144 control.valid_reg[2]  2
+.latch       n149 control.valid_reg[3]  2
+
+.names outs_ready control.valid_reg[3] ins_ready
+01 0
+.names Memory[0][0] ins_ready new_n90
+10 1
+.names ins[0] ins_ready new_n91
+11 1
+.names new_n90 new_n91 n34
+00 0
+.names Memory[0][1] ins_ready new_n93
+10 1
+.names ins[1] ins_ready new_n94_1
+11 1
+.names new_n93 new_n94_1 n39
+00 0
+.names Memory[0][2] ins_ready new_n96
+10 1
+.names ins[2] ins_ready new_n97
+11 1
+.names new_n96 new_n97 n44
+00 0
+.names Memory[0][3] ins_ready new_n99_1
+10 1
+.names ins[3] ins_ready new_n100
+11 1
+.names new_n99_1 new_n100 n49
+00 0
+.names Memory[0][4] ins_ready new_n102
+10 1
+.names ins[4] ins_ready new_n103
+11 1
+.names new_n102 new_n103 n54
+00 0
+.names Memory[1][0] ins_ready new_n105
+10 1
+.names Memory[0][0] ins_ready new_n106
+11 1
+.names new_n105 new_n106 n59
+00 0
+.names Memory[1][1] ins_ready new_n108
+10 1
+.names Memory[0][1] ins_ready new_n109_1
+11 1
+.names new_n108 new_n109_1 n64
+00 0
+.names Memory[1][2] ins_ready new_n111
+10 1
+.names Memory[0][2] ins_ready new_n112
+11 1
+.names new_n111 new_n112 n69
+00 0
+.names Memory[1][3] ins_ready new_n114_1
+10 1
+.names Memory[0][3] ins_ready new_n115
+11 1
+.names new_n114_1 new_n115 n74
+00 0
+.names Memory[1][4] ins_ready new_n117
+10 1
+.names Memory[0][4] ins_ready new_n118
+11 1
+.names new_n117 new_n118 n79
+00 0
+.names Memory[2][0] ins_ready new_n120
+10 1
+.names Memory[1][0] ins_ready new_n121
+11 1
+.names new_n120 new_n121 n84
+00 0
+.names Memory[2][1] ins_ready new_n123
+10 1
+.names Memory[1][1] ins_ready new_n124_1
+11 1
+.names new_n123 new_n124_1 n89
+00 0
+.names Memory[2][2] ins_ready new_n126
+10 1
+.names Memory[1][2] ins_ready new_n127
+11 1
+.names new_n126 new_n127 n94
+00 0
+.names Memory[2][3] ins_ready new_n129_1
+10 1
+.names Memory[1][3] ins_ready new_n130
+11 1
+.names new_n129_1 new_n130 n99
+00 0
+.names Memory[2][4] ins_ready new_n132
+10 1
+.names Memory[1][4] ins_ready new_n133
+11 1
+.names new_n132 new_n133 n104
+00 0
+.names Memory[3][0] ins_ready new_n135
+10 1
+.names Memory[2][0] ins_ready new_n136
+11 1
+.names new_n135 new_n136 n109
+00 0
+.names Memory[3][1] ins_ready new_n138
+10 1
+.names Memory[2][1] ins_ready new_n139_1
+11 1
+.names new_n138 new_n139_1 n114
+00 0
+.names Memory[3][2] ins_ready new_n141
+10 1
+.names Memory[2][2] ins_ready new_n142
+11 1
+.names new_n141 new_n142 n119
+00 0
+.names Memory[3][3] ins_ready new_n144_1
+10 1
+.names Memory[2][3] ins_ready new_n145
+11 1
+.names new_n144_1 new_n145 n124
+00 0
+.names Memory[3][4] ins_ready new_n147
+10 1
+.names Memory[2][4] ins_ready new_n148
+11 1
+.names new_n147 new_n148 n129
+00 0
+.names control.valid_reg[0] ins_ready new_n150
+10 1
+.names ins_valid ins_ready new_n151
+11 1
+.names new_n150 new_n151 new_n152
+00 1
+.names rst new_n152 n134
+00 1
+.names control.valid_reg[1] ins_ready new_n154
+10 1
+.names control.valid_reg[0] ins_ready new_n155
+11 1
+.names new_n154 new_n155 new_n156
+00 1
+.names rst new_n156 n139
+00 1
+.names control.valid_reg[2] ins_ready new_n158
+10 1
+.names control.valid_reg[1] ins_ready new_n159
+11 1
+.names new_n158 new_n159 new_n160
+00 1
+.names rst new_n160 n144
+00 1
+.names control.valid_reg[2] ins_ready new_n162
+01 1
+.names rst new_n162 n149
+00 1
+.names Memory[3][0] outs[0]
+1 1
+.names Memory[3][1] outs[1]
+1 1
+.names Memory[3][2] outs[2]
+1 1
+.names Memory[3][3] outs[3]
+1 1
+.names Memory[3][4] outs[4]
+1 1
+.names control.valid_reg[3] outs_valid
+1 1
+.end

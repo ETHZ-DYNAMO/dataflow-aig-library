@@ -1,0 +1,19 @@
+# Benchmark "store" written by ABC on Sun Jul 13 20:35:29 2025
+.model store
+.inputs clk rst dataIn dataIn_valid addrIn addrIn_valid dataToMem_ready \
+ addrOut_ready
+.outputs dataIn_ready addrIn_ready dataToMem dataToMem_valid addrOut \
+ addrOut_valid
+.names dataToMem_ready dataIn_ready
+1 1
+.names addrOut_ready addrIn_ready
+1 1
+.names dataIn dataToMem
+1 1
+.names dataIn_valid dataToMem_valid
+1 1
+.names addrIn addrOut
+1 1
+.names addrIn_valid addrOut_valid
+1 1
+.end

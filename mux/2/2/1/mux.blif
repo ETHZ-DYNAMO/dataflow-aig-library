@@ -1,0 +1,50 @@
+# Benchmark "mux" written by ABC on Sun Jul 13 20:28:31 2025
+.model mux
+.inputs clk rst ins[0] ins[1] ins[2] ins[3] ins_valid[0] ins_valid[1] index \
+ index_valid outs_ready
+.outputs ins_ready[0] ins_ready[1] index_ready outs[0] outs[1] outs_valid
+.names ins_valid[0] index new_n18
+10 1
+.names index_valid new_n18 new_n19
+11 1
+.names outs_ready new_n19 new_n20
+11 1
+.names ins_valid[0] new_n20 new_n21
+10 1
+.names rst new_n21 ins_ready[0]
+00 1
+.names ins_valid[1] index new_n23
+11 1
+.names index_valid new_n23 new_n24
+11 1
+.names outs_ready new_n24 new_n25
+11 1
+.names ins_valid[1] new_n25 new_n26
+10 1
+.names rst new_n26 ins_ready[1]
+00 1
+.names new_n19 new_n24 new_n28
+00 1
+.names rst new_n28 outs_valid
+00 1
+.names outs_ready outs_valid new_n30
+11 1
+.names index_valid new_n30 index_ready
+10 0
+.names ins[0] new_n24 new_n32
+10 1
+.names ins[2] new_n24 new_n33
+11 1
+.names new_n32 new_n33 new_n34
+00 1
+.names rst new_n34 outs[0]
+00 1
+.names ins[1] new_n24 new_n36
+10 1
+.names ins[3] new_n24 new_n37
+11 1
+.names new_n36 new_n37 new_n38
+00 1
+.names rst new_n38 outs[1]
+00 1
+.end

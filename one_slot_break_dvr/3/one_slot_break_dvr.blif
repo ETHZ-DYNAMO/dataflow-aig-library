@@ -1,0 +1,56 @@
+# Benchmark "one_slot_break_dvr" written by ABC on Sun Jul 13 20:25:38 2025
+.model one_slot_break_dvr
+.inputs clk rst ins[0] ins[1] ins[2] ins_valid outs_ready
+.outputs ins_ready outs[0] outs[1] outs[2] outs_valid
+
+.latch        n26 dataReg[0]  0
+.latch        n31 dataReg[1]  0
+.latch        n36 dataReg[2]  0
+.latch        n41 control.outputValid  0
+.latch        n46 control.inputReady  1
+
+.names ins_valid control.inputReady new_n28
+11 1
+.names dataReg[0] new_n28 new_n29
+10 1
+.names ins[0] new_n28 new_n30
+11 1
+.names new_n29 new_n30 new_n31_1
+00 1
+.names rst new_n31_1 n26
+00 1
+.names dataReg[1] new_n28 new_n33
+10 1
+.names ins[1] new_n28 new_n34
+11 1
+.names new_n33 new_n34 new_n35
+00 1
+.names rst new_n35 n31
+00 1
+.names dataReg[2] new_n28 new_n37
+10 1
+.names ins[2] new_n28 new_n38
+11 1
+.names new_n37 new_n38 new_n39
+00 1
+.names rst new_n39 n36
+00 1
+.names outs_ready control.outputValid new_n41_1
+01 1
+.names new_n28 new_n41_1 new_n42
+00 1
+.names rst new_n42 n41
+00 1
+.names n41 n46
+0 1
+.names control.inputReady ins_ready
+1 1
+.names dataReg[0] outs[0]
+1 1
+.names dataReg[1] outs[1]
+1 1
+.names dataReg[2] outs[2]
+1 1
+.names control.outputValid outs_valid
+1 1
+.end

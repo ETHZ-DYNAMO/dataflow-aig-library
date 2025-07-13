@@ -1,0 +1,79 @@
+# Benchmark "control_merge_dataless" written by ABC on Sun Jul 13 20:30:30 2025
+.model control_merge_dataless
+.inputs clk rst ins_valid[0] ins_valid[1] ins_valid[2] outs_ready \
+ index_ready
+.outputs ins_ready[0] ins_ready[1] ins_ready[2] outs_valid index[0] \
+ index[1] index_valid
+
+.latch        n30 fork_dataless.regBlock[0].regblock.transmitValue  1
+.latch        n35 fork_dataless.regBlock[1].regblock.transmitValue  1
+.latch        n40 tehb.dataReg[0]  0
+.latch        n45 tehb.dataReg[1]  0
+.latch        n50 tehb.control.fullReg  0
+
+.names ins_valid[0] tehb.control.fullReg ins_ready[0]
+10 1
+.names ins_valid[0] ins_valid[1] new_n31
+01 1
+.names tehb.control.fullReg new_n31 ins_ready[1]
+01 1
+.names ins_valid[0] new_n31 new_n33
+00 1
+.names ins_valid[2] new_n33 new_n34
+11 1
+.names tehb.control.fullReg new_n34 ins_ready[2]
+01 1
+.names new_n33 new_n34 new_n36
+00 1
+.names new_n34 new_n36 new_n37
+00 1
+.names tehb.control.fullReg new_n37 new_n38
+01 1
+.names fork_dataless.regBlock[0].regblock.transmitValue new_n38 outs_valid
+10 1
+.names tehb.dataReg[0] tehb.control.fullReg new_n40_1
+11 1
+.names ins_ready[1] new_n40_1 index[0]
+00 0
+.names tehb.dataReg[1] tehb.control.fullReg new_n42
+11 1
+.names ins_ready[2] new_n42 index[1]
+00 0
+.names fork_dataless.regBlock[1].regblock.transmitValue new_n38 index_valid
+10 1
+.names outs_ready fork_dataless.regBlock[0].regblock.transmitValue \
+ new_n45_1
+01 1
+.names index_ready fork_dataless.regBlock[1].regblock.transmitValue new_n46
+01 1
+.names new_n45_1 new_n46 new_n47
+00 1
+.names rst new_n47 new_n48
+00 1
+.names new_n38 new_n48 n50
+01 1
+.names new_n45_1 n50 n30
+01 0
+.names new_n46 n50 n35
+01 0
+.names tehb.control.fullReg new_n47 new_n52
+00 1
+.names new_n37 new_n52 new_n53
+01 1
+.names tehb.dataReg[0] new_n53 new_n54
+10 1
+.names new_n31 new_n53 new_n55
+11 1
+.names new_n54 new_n55 new_n56
+00 1
+.names rst new_n56 n40
+00 1
+.names tehb.dataReg[1] new_n53 new_n58
+10 1
+.names new_n34 new_n53 new_n59
+11 1
+.names new_n58 new_n59 new_n60
+00 1
+.names rst new_n60 n45
+00 1
+.end

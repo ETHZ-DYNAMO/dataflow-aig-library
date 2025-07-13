@@ -1,0 +1,41 @@
+# Benchmark "shift_reg_break_dv" written by ABC on Sun Jul 13 20:25:46 2025
+.model shift_reg_break_dv
+.inputs clk rst ins ins_valid outs_ready
+.outputs ins_ready outs outs_valid
+
+.latch        n18  Memory[0]  2
+.latch        n23  Memory[1]  2
+.latch        n28 control.valid_reg[0]  2
+.latch        n33 control.valid_reg[1]  2
+
+.names outs_ready control.valid_reg[1] ins_ready
+01 0
+.names Memory[0] ins_ready new_n22
+10 1
+.names ins ins_ready new_n23_1
+11 1
+.names new_n22 new_n23_1 n18
+00 0
+.names Memory[1] ins_ready new_n25
+10 1
+.names Memory[0] ins_ready new_n26
+11 1
+.names new_n25 new_n26 n23
+00 0
+.names control.valid_reg[0] ins_ready new_n28_1
+10 1
+.names ins_valid ins_ready new_n29
+11 1
+.names new_n28_1 new_n29 new_n30
+00 1
+.names rst new_n30 n28
+00 1
+.names control.valid_reg[0] ins_ready new_n32
+01 1
+.names rst new_n32 n33
+00 1
+.names Memory[1] outs
+1 1
+.names control.valid_reg[1] outs_valid
+1 1
+.end

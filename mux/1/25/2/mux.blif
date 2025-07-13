@@ -1,0 +1,79 @@
+# Benchmark "mux" written by ABC on Sun Jul 13 20:28:28 2025
+.model mux
+.inputs clk rst ins[0] ins[1] ins[2] ins[3] ins[4] ins[5] ins[6] ins[7] \
+ ins[8] ins[9] ins[10] ins[11] ins[12] ins[13] ins[14] ins[15] ins[16] \
+ ins[17] ins[18] ins[19] ins[20] ins[21] ins[22] ins[23] ins[24] ins_valid \
+ index[0] index[1] index_valid outs_ready
+.outputs ins_ready index_ready outs[0] outs[1] outs[2] outs[3] outs[4] \
+ outs[5] outs[6] outs[7] outs[8] outs[9] outs[10] outs[11] outs[12] \
+ outs[13] outs[14] outs[15] outs[16] outs[17] outs[18] outs[19] outs[20] \
+ outs[21] outs[22] outs[23] outs[24] outs_valid
+.names ins_valid index[0] new_n61
+10 1
+.names index[1] index_valid new_n62
+01 1
+.names new_n61 new_n62 new_n63
+11 1
+.names outs_ready new_n63 new_n64
+11 1
+.names ins_valid new_n64 new_n65
+10 1
+.names rst new_n65 ins_ready
+00 1
+.names rst new_n63 outs_valid
+01 1
+.names outs_ready outs_valid new_n68
+11 1
+.names index_valid new_n68 index_ready
+10 0
+.names rst ins[0] outs[0]
+01 1
+.names rst ins[1] outs[1]
+01 1
+.names rst ins[2] outs[2]
+01 1
+.names rst ins[3] outs[3]
+01 1
+.names rst ins[4] outs[4]
+01 1
+.names rst ins[5] outs[5]
+01 1
+.names rst ins[6] outs[6]
+01 1
+.names rst ins[7] outs[7]
+01 1
+.names rst ins[8] outs[8]
+01 1
+.names rst ins[9] outs[9]
+01 1
+.names rst ins[10] outs[10]
+01 1
+.names rst ins[11] outs[11]
+01 1
+.names rst ins[12] outs[12]
+01 1
+.names rst ins[13] outs[13]
+01 1
+.names rst ins[14] outs[14]
+01 1
+.names rst ins[15] outs[15]
+01 1
+.names rst ins[16] outs[16]
+01 1
+.names rst ins[17] outs[17]
+01 1
+.names rst ins[18] outs[18]
+01 1
+.names rst ins[19] outs[19]
+01 1
+.names rst ins[20] outs[20]
+01 1
+.names rst ins[21] outs[21]
+01 1
+.names rst ins[22] outs[22]
+01 1
+.names rst ins[23] outs[23]
+01 1
+.names rst ins[24] outs[24]
+01 1
+.end

@@ -1,0 +1,72 @@
+# Benchmark "merge_dataless" written by ABC on Sun Jul 13 20:31:14 2025
+.model merge_dataless
+.inputs clk rst ins_valid[0] ins_valid[1] ins_valid[2] ins_valid[3] \
+ ins_valid[4] ins_valid[5] ins_valid[6] ins_valid[7] ins_valid[8] \
+ outs_ready
+.outputs ins_ready[0] ins_ready[1] ins_ready[2] ins_ready[3] ins_ready[4] \
+ ins_ready[5] ins_ready[6] ins_ready[7] ins_ready[8] outs_valid
+.names ins_valid[0] outs_ready ins_ready[0]
+11 1
+.names ins_valid[0] ins_valid[1] new_n24
+01 1
+.names outs_ready new_n24 ins_ready[1]
+11 1
+.names ins_valid[0] new_n24 new_n26
+00 1
+.names ins_valid[2] new_n26 new_n27
+11 1
+.names outs_ready new_n27 ins_ready[2]
+11 1
+.names new_n26 new_n27 new_n29
+00 1
+.names new_n27 new_n29 new_n30
+00 1
+.names ins_valid[3] new_n30 new_n31
+11 1
+.names outs_ready new_n31 ins_ready[3]
+11 1
+.names new_n30 new_n31 new_n33
+00 1
+.names new_n31 new_n33 new_n34
+00 1
+.names ins_valid[4] new_n34 new_n35
+11 1
+.names outs_ready new_n35 ins_ready[4]
+11 1
+.names new_n34 new_n35 new_n37
+00 1
+.names new_n35 new_n37 new_n38
+00 1
+.names ins_valid[5] new_n38 new_n39
+11 1
+.names outs_ready new_n39 ins_ready[5]
+11 1
+.names new_n38 new_n39 new_n41
+00 1
+.names new_n39 new_n41 new_n42
+00 1
+.names ins_valid[6] new_n42 new_n43
+11 1
+.names outs_ready new_n43 ins_ready[6]
+11 1
+.names new_n42 new_n43 new_n45
+00 1
+.names new_n43 new_n45 new_n46
+00 1
+.names ins_valid[7] new_n46 new_n47
+11 1
+.names outs_ready new_n47 ins_ready[7]
+11 1
+.names new_n46 new_n47 new_n49
+00 1
+.names new_n47 new_n49 new_n50
+00 1
+.names ins_valid[8] new_n50 new_n51
+11 1
+.names outs_ready new_n51 ins_ready[8]
+11 1
+.names new_n50 new_n51 new_n53
+00 1
+.names new_n51 new_n53 outs_valid
+00 0
+.end

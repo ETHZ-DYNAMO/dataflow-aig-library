@@ -1,0 +1,46 @@
+# Benchmark "mux_dataless" written by ABC on Sun Jul 13 20:28:18 2025
+.model mux_dataless
+.inputs clk rst ins_valid[0] ins_valid[1] ins_valid[2] index[0] index[1] \
+ index[2] index_valid outs_ready
+.outputs ins_ready[0] ins_ready[1] ins_ready[2] index_ready outs_valid
+.names index[1] index[2] new_n16
+00 1
+.names index_valid new_n16 new_n17
+11 1
+.names ins_valid[0] index[0] new_n18
+10 1
+.names new_n17 new_n18 new_n19
+11 1
+.names outs_ready new_n19 new_n20
+11 1
+.names ins_valid[0] new_n20 ins_ready[0]
+10 0
+.names ins_valid[1] index[0] new_n22
+11 1
+.names new_n17 new_n22 new_n23
+11 1
+.names outs_ready new_n23 new_n24
+11 1
+.names ins_valid[1] new_n24 ins_ready[1]
+10 0
+.names ins_valid[2] index[0] new_n26
+10 1
+.names index[1] index[2] new_n27
+10 1
+.names index_valid new_n27 new_n28
+11 1
+.names new_n26 new_n28 new_n29
+11 1
+.names outs_ready new_n29 new_n30
+11 1
+.names ins_valid[2] new_n30 ins_ready[2]
+10 0
+.names new_n19 new_n23 new_n32
+00 1
+.names new_n29 new_n32 outs_valid
+01 0
+.names outs_ready outs_valid new_n34
+11 1
+.names index_valid new_n34 index_ready
+10 0
+.end

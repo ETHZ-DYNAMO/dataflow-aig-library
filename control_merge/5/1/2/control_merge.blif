@@ -1,0 +1,120 @@
+# Benchmark "control_merge" written by ABC on Sun Jul 13 14:40:58 2025
+.model control_merge
+.inputs clk rst ins[0] ins[1] ins[2] ins[3] ins[4] ins_valid[0] \
+ ins_valid[1] ins_valid[2] ins_valid[3] ins_valid[4] outs_ready index_ready
+.outputs ins_ready[0] ins_ready[1] ins_ready[2] ins_ready[3] ins_ready[4] \
+ outs outs_valid index[0] index[1] index_valid
+
+.latch        n50 control.fork_dataless.regBlock[0].regblock.transmitValue  1
+.latch        n55 control.fork_dataless.regBlock[1].regblock.transmitValue  1
+.latch        n60 control.tehb.dataReg[0]  0
+.latch        n65 control.tehb.dataReg[1]  0
+.latch        n70 control.tehb.control.fullReg  0
+
+.names ins_valid[0] control.tehb.control.fullReg ins_ready[0]
+10 1
+.names ins_valid[0] ins_valid[1] new_n41
+01 1
+.names control.tehb.control.fullReg new_n41 ins_ready[1]
+01 1
+.names ins_valid[0] new_n41 new_n43
+00 1
+.names ins_valid[2] new_n43 new_n44
+11 1
+.names control.tehb.control.fullReg new_n44 ins_ready[2]
+01 1
+.names ins_valid[3] new_n43 new_n46
+11 1
+.names new_n44 new_n46 new_n47
+01 1
+.names control.tehb.control.fullReg new_n47 ins_ready[3]
+01 1
+.names new_n44 new_n47 new_n49
+00 1
+.names new_n43 new_n49 new_n50_1
+11 1
+.names ins_valid[4] new_n50_1 new_n51
+11 1
+.names control.tehb.control.fullReg new_n51 ins_ready[4]
+01 1
+.names control.tehb.dataReg[0] control.tehb.control.fullReg new_n53
+11 1
+.names new_n41 new_n47 new_n54
+00 1
+.names new_n51 new_n54 new_n55_1
+00 1
+.names control.tehb.control.fullReg new_n55_1 new_n56
+01 1
+.names new_n53 new_n56 index[0]
+00 0
+.names ins[0] index[0] new_n58
+10 1
+.names ins[1] index[0] new_n59
+11 1
+.names new_n58 new_n59 new_n60_1
+00 1
+.names control.tehb.dataReg[1] control.tehb.control.fullReg new_n61
+11 1
+.names control.tehb.control.fullReg new_n49 new_n62
+00 1
+.names new_n61 new_n62 index[1]
+00 0
+.names new_n60_1 index[1] new_n64
+00 1
+.names ins[2] index[0] new_n65_1
+10 1
+.names ins[3] index[0] new_n66
+11 1
+.names new_n65_1 new_n66 new_n67
+00 1
+.names index[1] new_n67 new_n68
+10 1
+.names new_n64 new_n68 outs
+00 0
+.names new_n50_1 new_n51 new_n70_1
+10 1
+.names control.tehb.control.fullReg new_n70_1 new_n71
+01 1
+.names control.fork_dataless.regBlock[0].regblock.transmitValue new_n71 \
+ outs_valid
+10 1
+.names control.fork_dataless.regBlock[1].regblock.transmitValue new_n71 \
+ index_valid
+10 1
+.names outs_ready control.fork_dataless.regBlock[0].regblock.transmitValue \
+ new_n74
+01 1
+.names index_ready control.fork_dataless.regBlock[1].regblock.transmitValue \
+ new_n75
+01 1
+.names new_n74 new_n75 new_n76
+00 1
+.names rst new_n76 new_n77
+00 1
+.names new_n71 new_n77 n70
+01 1
+.names new_n74 n70 n50
+01 0
+.names new_n75 n70 n55
+01 0
+.names control.tehb.control.fullReg new_n76 new_n81
+00 1
+.names new_n70_1 new_n81 new_n82
+01 1
+.names control.tehb.dataReg[0] new_n82 new_n83
+10 1
+.names new_n55_1 new_n82 new_n84
+11 1
+.names new_n83 new_n84 new_n85
+00 1
+.names rst new_n85 n60
+00 1
+.names control.tehb.dataReg[1] new_n82 new_n87
+10 1
+.names new_n49 new_n82 new_n88
+01 1
+.names new_n87 new_n88 new_n89
+00 1
+.names rst new_n89 n65
+00 1
+.end

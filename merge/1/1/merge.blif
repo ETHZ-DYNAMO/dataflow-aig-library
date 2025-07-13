@@ -1,0 +1,11 @@
+# Benchmark "merge" written by ABC on Sun Jul 13 20:31:14 2025
+.model merge
+.inputs clk rst ins ins_valid outs_ready
+.outputs ins_ready outs outs_valid
+.names ins_valid outs_ready ins_ready
+11 1
+.names ins outs
+1 1
+.names ins_valid outs_valid
+1 1
+.end

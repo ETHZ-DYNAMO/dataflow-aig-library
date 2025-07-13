@@ -1,0 +1,70 @@
+# Benchmark "shift_reg_break_dv_dataless" written by ABC on Sun Jul 13 20:25:42 2025
+.model shift_reg_break_dv_dataless
+.inputs clk rst ins_valid outs_ready
+.outputs outs_valid ins_ready
+
+.latch        n14 valid_reg[0]  2
+.latch        n19 valid_reg[1]  2
+.latch        n24 valid_reg[2]  2
+.latch        n29 valid_reg[3]  2
+.latch        n34 valid_reg[4]  2
+.latch        n39 valid_reg[5]  2
+.latch        n44 valid_reg[6]  2
+
+.names outs_ready valid_reg[6] ins_ready
+01 0
+.names valid_reg[0] ins_ready new_n29_1
+10 1
+.names ins_valid ins_ready new_n30
+11 1
+.names new_n29_1 new_n30 new_n31
+00 1
+.names rst new_n31 n14
+00 1
+.names valid_reg[1] ins_ready new_n33
+10 1
+.names valid_reg[0] ins_ready new_n34_1
+11 1
+.names new_n33 new_n34_1 new_n35
+00 1
+.names rst new_n35 n19
+00 1
+.names valid_reg[2] ins_ready new_n37
+10 1
+.names valid_reg[1] ins_ready new_n38
+11 1
+.names new_n37 new_n38 new_n39_1
+00 1
+.names rst new_n39_1 n24
+00 1
+.names valid_reg[3] ins_ready new_n41
+10 1
+.names valid_reg[2] ins_ready new_n42
+11 1
+.names new_n41 new_n42 new_n43
+00 1
+.names rst new_n43 n29
+00 1
+.names valid_reg[4] ins_ready new_n45
+10 1
+.names valid_reg[3] ins_ready new_n46
+11 1
+.names new_n45 new_n46 new_n47
+00 1
+.names rst new_n47 n34
+00 1
+.names valid_reg[5] ins_ready new_n49
+10 1
+.names valid_reg[4] ins_ready new_n50
+11 1
+.names new_n49 new_n50 new_n51
+00 1
+.names rst new_n51 n39
+00 1
+.names valid_reg[5] ins_ready new_n53
+01 1
+.names rst new_n53 n44
+00 1
+.names valid_reg[6] outs_valid
+1 1
+.end

@@ -1,0 +1,61 @@
+# Benchmark "shift_reg_break_dv" written by ABC on Sun Jul 13 20:25:43 2025
+.model shift_reg_break_dv
+.inputs clk rst ins[0] ins[1] ins[2] ins[3] ins[4] ins_valid outs_ready
+.outputs ins_ready outs[0] outs[1] outs[2] outs[3] outs[4] outs_valid
+
+.latch        n34 Memory[0][0]  2
+.latch        n39 Memory[0][1]  2
+.latch        n44 Memory[0][2]  2
+.latch        n49 Memory[0][3]  2
+.latch        n54 Memory[0][4]  2
+.latch        n59 control.valid_reg  2
+
+.names outs_ready control.valid_reg ins_ready
+01 0
+.names Memory[0][0] ins_ready new_n36
+10 1
+.names ins[0] ins_ready new_n37
+11 1
+.names new_n36 new_n37 n34
+00 0
+.names Memory[0][1] ins_ready new_n39_1
+10 1
+.names ins[1] ins_ready new_n40
+11 1
+.names new_n39_1 new_n40 n39
+00 0
+.names Memory[0][2] ins_ready new_n42
+10 1
+.names ins[2] ins_ready new_n43
+11 1
+.names new_n42 new_n43 n44
+00 0
+.names Memory[0][3] ins_ready new_n45
+10 1
+.names ins[3] ins_ready new_n46
+11 1
+.names new_n45 new_n46 n49
+00 0
+.names Memory[0][4] ins_ready new_n48
+10 1
+.names ins[4] ins_ready new_n49_1
+11 1
+.names new_n48 new_n49_1 n54
+00 0
+.names ins_valid ins_ready new_n51
+01 1
+.names rst new_n51 n59
+00 1
+.names Memory[0][0] outs[0]
+1 1
+.names Memory[0][1] outs[1]
+1 1
+.names Memory[0][2] outs[2]
+1 1
+.names Memory[0][3] outs[3]
+1 1
+.names Memory[0][4] outs[4]
+1 1
+.names control.valid_reg outs_valid
+1 1
+.end

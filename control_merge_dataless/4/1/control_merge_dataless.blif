@@ -1,0 +1,78 @@
+# Benchmark "control_merge_dataless" written by ABC on Sun Jul 13 20:30:31 2025
+.model control_merge_dataless
+.inputs clk rst ins_valid[0] ins_valid[1] ins_valid[2] ins_valid[3] \
+ outs_ready index_ready
+.outputs ins_ready[0] ins_ready[1] ins_ready[2] ins_ready[3] outs_valid \
+ index index_valid
+
+.latch        n32 fork_dataless.regBlock[0].regblock.transmitValue  1
+.latch        n37 fork_dataless.regBlock[1].regblock.transmitValue  1
+.latch        n42 tehb.dataReg  0
+.latch        n47 tehb.control.fullReg  0
+
+.names ins_valid[0] tehb.control.fullReg ins_ready[0]
+10 1
+.names ins_valid[0] ins_valid[1] new_n29
+01 1
+.names tehb.control.fullReg new_n29 ins_ready[1]
+01 1
+.names ins_valid[0] new_n29 new_n31
+00 1
+.names ins_valid[2] new_n31 new_n32_1
+11 1
+.names tehb.control.fullReg new_n32_1 ins_ready[2]
+01 1
+.names new_n31 new_n32_1 new_n34
+00 1
+.names new_n32_1 new_n34 new_n35
+00 1
+.names ins_valid[3] new_n35 new_n36
+11 1
+.names tehb.control.fullReg new_n36 ins_ready[3]
+01 1
+.names new_n35 new_n36 new_n38
+00 1
+.names new_n36 new_n38 new_n39
+00 1
+.names tehb.control.fullReg new_n39 new_n40
+01 1
+.names fork_dataless.regBlock[0].regblock.transmitValue new_n40 outs_valid
+10 1
+.names tehb.dataReg tehb.control.fullReg new_n42_1
+11 1
+.names new_n29 new_n36 new_n43
+00 1
+.names tehb.control.fullReg new_n43 new_n44
+00 1
+.names new_n42_1 new_n44 index
+00 0
+.names fork_dataless.regBlock[1].regblock.transmitValue new_n40 index_valid
+10 1
+.names outs_ready fork_dataless.regBlock[0].regblock.transmitValue \
+ new_n47_1
+01 1
+.names index_ready fork_dataless.regBlock[1].regblock.transmitValue new_n48
+01 1
+.names new_n47_1 new_n48 new_n49
+00 1
+.names rst new_n49 new_n50
+00 1
+.names new_n40 new_n50 n47
+01 1
+.names new_n47_1 n47 n32
+01 0
+.names new_n48 n47 n37
+01 0
+.names tehb.control.fullReg new_n49 new_n54
+00 1
+.names new_n39 new_n54 new_n55
+01 1
+.names tehb.dataReg new_n55 new_n56
+10 1
+.names new_n43 new_n55 new_n57
+01 1
+.names new_n56 new_n57 new_n58
+00 1
+.names rst new_n58 n42
+00 1
+.end

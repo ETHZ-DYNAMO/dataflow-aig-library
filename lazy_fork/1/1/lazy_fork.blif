@@ -1,0 +1,11 @@
+# Benchmark "lazy_fork" written by ABC on Sun Jul 13 20:27:38 2025
+.model lazy_fork
+.inputs clk rst ins ins_valid outs_ready
+.outputs ins_ready outs outs_valid
+.names outs_ready ins_ready
+1 1
+.names ins outs
+1 1
+.names ins_valid outs_valid
+1 1
+.end

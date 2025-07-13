@@ -1,0 +1,172 @@
+# Benchmark "shift_reg_break_dv" written by ABC on Sun Jul 13 20:26:06 2025
+.model shift_reg_break_dv
+.inputs clk rst ins[0] ins[1] ins_valid outs_ready
+.outputs ins_ready outs[0] outs[1] outs_valid
+
+.latch        n22 Memory[0][0]  2
+.latch        n27 Memory[0][1]  2
+.latch        n32 Memory[1][0]  2
+.latch        n37 Memory[1][1]  2
+.latch        n42 Memory[2][0]  2
+.latch        n47 Memory[2][1]  2
+.latch        n52 Memory[3][0]  2
+.latch        n57 Memory[3][1]  2
+.latch        n62 Memory[4][0]  2
+.latch        n67 Memory[4][1]  2
+.latch        n72 Memory[5][0]  2
+.latch        n77 Memory[5][1]  2
+.latch        n82 Memory[6][0]  2
+.latch        n87 Memory[6][1]  2
+.latch        n92 control.valid_reg[0]  2
+.latch        n97 control.valid_reg[1]  2
+.latch       n102 control.valid_reg[2]  2
+.latch       n107 control.valid_reg[3]  2
+.latch       n112 control.valid_reg[4]  2
+.latch       n117 control.valid_reg[5]  2
+.latch       n122 control.valid_reg[6]  2
+
+.names outs_ready control.valid_reg[6] ins_ready
+01 0
+.names Memory[0][0] ins_ready new_n75
+10 1
+.names ins[0] ins_ready new_n76
+11 1
+.names new_n75 new_n76 n22
+00 0
+.names Memory[0][1] ins_ready new_n78
+10 1
+.names ins[1] ins_ready new_n79
+11 1
+.names new_n78 new_n79 n27
+00 0
+.names Memory[1][0] ins_ready new_n81
+10 1
+.names Memory[0][0] ins_ready new_n82_1
+11 1
+.names new_n81 new_n82_1 n32
+00 0
+.names Memory[1][1] ins_ready new_n84
+10 1
+.names Memory[0][1] ins_ready new_n85
+11 1
+.names new_n84 new_n85 n37
+00 0
+.names Memory[2][0] ins_ready new_n87_1
+10 1
+.names Memory[1][0] ins_ready new_n88
+11 1
+.names new_n87_1 new_n88 n42
+00 0
+.names Memory[2][1] ins_ready new_n90
+10 1
+.names Memory[1][1] ins_ready new_n91
+11 1
+.names new_n90 new_n91 n47
+00 0
+.names Memory[3][0] ins_ready new_n93
+10 1
+.names Memory[2][0] ins_ready new_n94
+11 1
+.names new_n93 new_n94 n52
+00 0
+.names Memory[3][1] ins_ready new_n96
+10 1
+.names Memory[2][1] ins_ready new_n97_1
+11 1
+.names new_n96 new_n97_1 n57
+00 0
+.names Memory[4][0] ins_ready new_n99
+10 1
+.names Memory[3][0] ins_ready new_n100
+11 1
+.names new_n99 new_n100 n62
+00 0
+.names Memory[4][1] ins_ready new_n102_1
+10 1
+.names Memory[3][1] ins_ready new_n103
+11 1
+.names new_n102_1 new_n103 n67
+00 0
+.names Memory[5][0] ins_ready new_n105
+10 1
+.names Memory[4][0] ins_ready new_n106
+11 1
+.names new_n105 new_n106 n72
+00 0
+.names Memory[5][1] ins_ready new_n108
+10 1
+.names Memory[4][1] ins_ready new_n109
+11 1
+.names new_n108 new_n109 n77
+00 0
+.names Memory[6][0] ins_ready new_n111
+10 1
+.names Memory[5][0] ins_ready new_n112_1
+11 1
+.names new_n111 new_n112_1 n82
+00 0
+.names Memory[6][1] ins_ready new_n114
+10 1
+.names Memory[5][1] ins_ready new_n115
+11 1
+.names new_n114 new_n115 n87
+00 0
+.names control.valid_reg[0] ins_ready new_n117_1
+10 1
+.names ins_valid ins_ready new_n118
+11 1
+.names new_n117_1 new_n118 new_n119
+00 1
+.names rst new_n119 n92
+00 1
+.names control.valid_reg[1] ins_ready new_n121
+10 1
+.names control.valid_reg[0] ins_ready new_n122_1
+11 1
+.names new_n121 new_n122_1 new_n123
+00 1
+.names rst new_n123 n97
+00 1
+.names control.valid_reg[2] ins_ready new_n125
+10 1
+.names control.valid_reg[1] ins_ready new_n126
+11 1
+.names new_n125 new_n126 new_n127
+00 1
+.names rst new_n127 n102
+00 1
+.names control.valid_reg[3] ins_ready new_n129
+10 1
+.names control.valid_reg[2] ins_ready new_n130
+11 1
+.names new_n129 new_n130 new_n131
+00 1
+.names rst new_n131 n107
+00 1
+.names control.valid_reg[4] ins_ready new_n133
+10 1
+.names control.valid_reg[3] ins_ready new_n134
+11 1
+.names new_n133 new_n134 new_n135
+00 1
+.names rst new_n135 n112
+00 1
+.names control.valid_reg[5] ins_ready new_n137
+10 1
+.names control.valid_reg[4] ins_ready new_n138
+11 1
+.names new_n137 new_n138 new_n139
+00 1
+.names rst new_n139 n117
+00 1
+.names control.valid_reg[5] ins_ready new_n141
+01 1
+.names rst new_n141 n122
+00 1
+.names Memory[6][0] outs[0]
+1 1
+.names Memory[6][1] outs[1]
+1 1
+.names control.valid_reg[6] outs_valid
+1 1
+.end

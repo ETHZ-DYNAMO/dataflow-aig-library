@@ -1,0 +1,45 @@
+# Benchmark "merge" written by ABC on Sun Jul 13 20:31:25 2025
+.model merge
+.inputs clk rst ins[0] ins[1] ins[2] ins[3] ins_valid[0] ins_valid[1] \
+ ins_valid[2] ins_valid[3] outs_ready
+.outputs ins_ready[0] ins_ready[1] ins_ready[2] ins_ready[3] outs \
+ outs_valid
+.names ins_valid[0] outs_ready ins_ready[0]
+11 1
+.names ins_valid[0] ins_valid[1] new_n19
+01 1
+.names outs_ready new_n19 ins_ready[1]
+11 1
+.names ins_valid[0] new_n19 new_n21
+00 1
+.names ins_valid[2] new_n21 new_n22
+11 1
+.names outs_ready new_n22 ins_ready[2]
+11 1
+.names new_n21 new_n22 new_n24
+10 1
+.names ins_valid[3] new_n24 new_n25
+11 1
+.names outs_ready new_n25 ins_ready[3]
+11 1
+.names ins[0] new_n19 new_n27
+10 1
+.names ins[1] new_n19 new_n28
+11 1
+.names new_n27 new_n28 new_n29
+00 1
+.names new_n22 new_n29 new_n30
+00 1
+.names ins[2] new_n22 new_n31
+11 1
+.names new_n30 new_n31 new_n32
+00 1
+.names new_n25 new_n32 new_n33
+00 1
+.names ins[3] new_n25 new_n34
+11 1
+.names new_n33 new_n34 outs
+00 0
+.names new_n24 new_n25 outs_valid
+10 0
+.end

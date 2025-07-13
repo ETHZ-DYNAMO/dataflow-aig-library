@@ -1,0 +1,76 @@
+# Benchmark "control_merge" written by ABC on Sun Jul 13 14:39:37 2025
+.model control_merge
+.inputs clk rst ins[0] ins[1] ins_valid[0] ins_valid[1] outs_ready \
+ index_ready
+.outputs ins_ready[0] ins_ready[1] outs outs_valid index[0] index[1] \
+ index_valid
+
+.latch        n32 control.fork_dataless.regBlock[0].regblock.transmitValue  1
+.latch        n37 control.fork_dataless.regBlock[1].regblock.transmitValue  1
+.latch        n42 control.tehb.dataReg[0]  0
+.latch        n47 control.tehb.dataReg[1]  0
+.latch        n52 control.tehb.control.fullReg  0
+
+.names ins_valid[0] control.tehb.control.fullReg ins_ready[0]
+10 1
+.names ins_valid[0] ins_valid[1] new_n32_1
+01 1
+.names control.tehb.control.fullReg new_n32_1 ins_ready[1]
+01 1
+.names control.tehb.dataReg[0] control.tehb.control.fullReg new_n34
+11 1
+.names ins_ready[1] new_n34 index[0]
+00 0
+.names ins[0] index[0] new_n36
+10 1
+.names ins[1] index[0] new_n37_1
+11 1
+.names new_n36 new_n37_1 new_n38
+00 1
+.names control.tehb.dataReg[1] control.tehb.control.fullReg index[1]
+11 1
+.names new_n38 index[1] outs
+00 1
+.names ins_valid[0] new_n32_1 new_n41
+00 1
+.names control.tehb.control.fullReg new_n41 new_n42_1
+01 1
+.names control.fork_dataless.regBlock[0].regblock.transmitValue new_n42_1 \
+ outs_valid
+10 1
+.names control.fork_dataless.regBlock[1].regblock.transmitValue new_n42_1 \
+ index_valid
+10 1
+.names outs_ready control.fork_dataless.regBlock[0].regblock.transmitValue \
+ new_n45
+01 1
+.names index_ready control.fork_dataless.regBlock[1].regblock.transmitValue \
+ new_n46
+01 1
+.names new_n45 new_n46 new_n47_1
+00 1
+.names rst new_n47_1 new_n48
+00 1
+.names new_n42_1 new_n48 n52
+01 1
+.names new_n45 n52 n32
+01 0
+.names new_n46 n52 n37
+01 0
+.names control.tehb.control.fullReg new_n41 new_n52_1
+00 1
+.names new_n47_1 new_n52_1 new_n53
+01 1
+.names control.tehb.dataReg[0] new_n53 new_n54
+10 1
+.names new_n32_1 new_n53 new_n55
+11 1
+.names new_n54 new_n55 new_n56
+00 1
+.names rst new_n56 n42
+00 1
+.names rst control.tehb.dataReg[1] new_n58
+01 1
+.names new_n53 new_n58 n47
+01 1
+.end
