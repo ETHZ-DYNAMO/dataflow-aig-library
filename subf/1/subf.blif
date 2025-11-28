@@ -1,0 +1,7 @@
+# Benchmark "addf" written by ABC on Thu Oct  9 13:30:58 2025
+.model addf
+.inputs clk rst lhs lhs_valid rhs rhs_valid result_ready
+.outputs result result_valid lhs_ready rhs_ready
+
+
+.end
